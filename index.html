@@ -1,0 +1,1188 @@
+<!DOCTYPE html><!-- UI fork from: https://ckeditor.com/ -->
+<html class="p-home" lang="zh_CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HomePage | Milaifon</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.gstatic.com/l/font?kit=1Ptvg83HX_SGhgqU3QAqQqFdk_S_53g2xIaoNp0VDhtw7-GVUBN0tDQ-67CvTk-woiU_UymhWc6uZamsR35zmHRfyzWjoiw7o7kw5Cy088v_cJioRmLZRm08KDflvUOWty8hPgdtcVu4hVhYfQmRqWPaBdO7adZNQsVhb8oToLK7UG8_MTWYxyrFShMhBKmnzy0XyKKLH_Q89uZrWu2rYhhnLhdKxg2CnmYwqGxijs-n0LoDdxSPkwRgDJeMpUxhk0hQbBsPKJ4JCP74b5nykcZ4rGDnPGwm_iO5USqol9uqm7_w7A7PhqgZow2jCK7oqkW1plEbhX5jrnvG_MPQMBhuARiHDaK_XQ3he9wD0aM_oth0NaNtLhFM45mYLBU49w_1yGsCUVeHq53m8C8MbLFK7HhqcRtbBEdWFQZ28CTF4JAuATIfDt8aGg6pa8CrZb4sNxWxr-80J1zQ6I6h86FlZh1Xg1G6O8ZcnnHI8IP0oAZ13cP-OADgm4HKZjYO27dCopWJxswwZD6gOJ2_7WOW0ybWci8ZYN9V27q-6WMuxz2nDekyW2m0aogrgmOlG7d05z0GdLiYzdUsRpEHDl3BosSq7QtHjd3bAC4a1wqeZmLSAxJYEoy0C8nnXOEftfYU9fkFttnbZc5iLXLxcGwMRFWOzMZRSa4M2xd9Mv1B59HwMgtdBeZwS5CKa4HcUVsdb4r4qQZYXe3jvqMFgNdSQ6Q3VqSO1KI&amp;skey=9f5b077cc22e75c7&amp;v=v13" as="font" type="font/woff2" crossorigin>
+        <!-- <link rel="stylesheet" href="nova-50dae2189b.css"> 手机界面导航未实现-->
+        <style id="nova-critical-css">
+            @font-face{font-style:normal;font-weight:300 800;src:url(https://fonts.gstatic.com/l/font?kit=1Ptvg83HX_SGhgqU3QAqQqFdk_S_53g2xIaoNp0VDhtw7-GVUBN0tDQ-67CvTk-woiU_UymhWc6uZamsR35zmHRfyzWjoiw7o7kw5Cy088v_cJioRmLZRm08KDflvUOWty8hPgdtcVu4hVhYfQmRqWPaBdO7adZNQsVhb8oToLK7UG8_MTWYxyrFShMhBKmnzy0XyKKLH_Q89uZrWu2rYhhnLhdKxg2CnmYwqGxijs-n0LoDdxSPkwRgDJeMpUxhk0hQbBsPKJ4JCP74b5nykcZ4rGDnPGwm_iO5USqol9uqm7_w7A7PhqgZow2jCK7oqkW1plEbhX5jrnvG_MPQMBhuARiHDaK_XQ3he9wD0aM_oth0NaNtLhFM45mYLBU49w_1yGsCUVeHq53m8C8MbLFK7HhqcRtbBEdWFQZ28CTF4JAuATIfDt8aGg6pa8CrZb4sNxWxr-80J1zQ6I6h86FlZh1Xg1G6O8ZcnnHI8IP0oAZ13cP-OADgm4HKZjYO27dCopWJxswwZD6gOJ2_7WOW0ybWci8ZYN9V27q-6WMuxz2nDekyW2m0aogrgmOlG7d05z0GdLiYzdUsRpEHDl3BosSq7QtHjd3bAC4a1wqeZmLSAxJYEoy0C8nnXOEftfYU9fkFttnbZc5iLXLxcGwMRFWOzMZRSa4M2xd9Mv1B59HwMgtdBeZwS5CKa4HcUVsdb4r4qQZYXe3jvqMFgNdSQ6Q3VqSO1KI&skey=9f5b077cc22e75c7&v=v13) format("woff2-variations");font-family:Mulish;font-display:swap}
+            @font-face{font-style:italic;font-weight:300 800;src:url(https://fonts.gstatic.com/l/font?kit=1Pttg83HX_SGhgqk2gotYKNnBcIIwXowwoSqOJMXDB127eOLThF2sjI86b6hTE22pCc9LVejW8ioZ6uiSXxxnnJdySu9oC49pbsy6iK28c35cpqWeGDbQGs-Kjnrv0GQsS0jIBlvc12-h1pWcwuTr2XYug-7aNZLQshhbsoRoLe7Sm8zMTaZ_irAShohGamizyAXz6K1H_E8_-Z2WuirbxhgKS9Kxw2Bnmcwt2xjjsin0bosdxWOowRjDJaMokx_k0lQaRsOKLgJC_75b578q8ZkrGbOIA5E_kDbUErKlbrImNmS6Gmtg8x7pWjBD8SKoi7Xrzl5jxcBpRWk8KyyPXQMD3XlAtDdTX6Daqxhw9Jdsa4WIdQPO2Uu9ez6O29a73SX0RNgSy7lsOOE7FBucc0o8gUIblk5JAQ0NEYU0mWnw9ZMJXV9K5t4PEvLTIrJTfVOHl3ThaZWDBKyxMHD3u0HSFA1rAPYC5U-ryGqwtKWk1AX6ZScDVSCrdSoUWxs4-wgm83r_JVSX2DCBMLd0D_07Xu0TE16Ybw229rd6gJNxVvECI5RXw3Xbe1IhAnGEtwX71Vlf9H7x7tPS_5kAjGiranJ43kknK64EF55xHv9dBSxFmU7BvjXHLyESpt8rI137YFmraC4f7ABMA2SbBBvWyjt0oQyaO1v-1ceEbwixZeTF0w-IaITbNXpTcu_eBB-R8Kbgk87d6OAk-xmrJsxbOlUe-ru_OIZlQ&skey=12f3c822011b7b1c&v=v13) format("woff2-variations");font-family:MulishItalic;font-display:swap}
+            :root{
+                --font-family:Mulish,system-ui,-apple-system,sans-serif;
+                --font-family-italic:MulishItalic,system-ui,-apple-system,sans-serif;
+                --font-family-mono:Consolas,Monaco,"Andale Mono","Ubuntu Mono",ui-monospace,monospace;
+                --body-line-height:1.4;
+                --headline-line-height:1.1;
+                --color-seal-1:hsl(0, 0%, 100%);
+                --color-seal-2:hsl(228, 100%, 98%);
+                --color-seal-3:hsl(227, 66%, 95%);
+                --color-tang-hs:263,59%;
+                --color-tang-4:hsl(var(--color-tang-hs), 92%);
+                --color-tang-5:hsl(var(--color-tang-hs), 52%);
+                --color-tang-6:hsl(var(--color-tang-hs), 40%);
+                --color-tang-7:hsl(var(--color-tang-hs), 26%);
+                --color-tang-8:hsl(var(--color-tang-hs), 10%);
+                --color-shark-1:hsl(228.26, 53.49%, 16.86%);
+                --color-shark-2:hsl(217.11, 60.32%, 24.71%);
+                --color-shark-3:hsl(212.5, 81.82%, 34.51%);
+                --color-shark-4:hsl(206.48, 81.01%, 35.1%);
+                --color-shark-5:hsl(200.56, 82.41%, 42.35%);
+                
+                --color-comet-hs:77,99%;
+                --color-comet-3:hsl(var(--color-comet-hs), 78%);
+                --color-comet-5:hsl(var(--color-comet-hs), 63%);
+                --color-comet-6:hsl(var(--color-comet-hs), 45%);
+                --color-comet-7:hsl(var(--color-comet-hs), 35%);
+                --color-reef-1:hsl(189, 57%, 91%);
+                --color-reef-2:hsl(16, 100%, 96%);
+                --color-reef-3:hsl(201, 83%, 95%);
+                --color-reef-4:hsl(234, 100%, 96%);
+                --color-reef-5:hsl(78, 52%, 94%);
+                --color-reef-6:hsl(345, 60%, 96%);
+                --color-tropical-1:hsl(53, 100%, 43%);
+                --color-tropical-2:hsl(36, 100%, 50%);
+                --color-tropical-3:hsl(17, 100%, 57%);
+                --color-tropical-4:hsl(346, 100%, 57%);
+                --color-tropical-5:hsl(328, 100%, 49%);
+                --color-tropical-6:hsl(277.75, 36.33%, 51.96%);
+                --color-arctic-1:hsl(208, 100%, 18%);
+                --color-arctic-2:hsl(200.56, 82.41%, 42.35%);
+                --color-arctic-3:hsl(188, 100%, 31%);
+                --color-arctic-4:hsl(168, 100%, 36%);
+                --color-arctic-5:hsl(140, 72%, 55%);
+                --color-arctic-6:hsl(157, 92%, 19%);
+                --color-arctic-7:hsl(167, 94%, 27%);
+                --transition-time-1:0.2s;
+                --transition-time-2:0.35s;
+                --shadow-1:0 0 var(--space-m) var(--space-4xs) rgba(0, 0, 0, 0.1);
+                --shadow-2:0 0 var(--space-2xs) var(--space-4xs) rgba(0, 0, 0, 0.07);
+                --dropshadow-1:0 0 var(--space-2xs) rgba(0, 0, 0, 0.085);
+                --gradient-1:linear-gradient( 122.1deg, var(--color-tang-8) 32.29%, var(--color-tang-7) 70.55% );
+                --gradient-2:linear-gradient( 122.1deg, var(--color-comet-5) 32.29%, var(--color-comet-6) 70.55% );
+                --gradient-3:linear-gradient( 122.1deg, transparent 32.29%, color-mix(in srgb, var(--color-tang-7) 70%, var(--color-mix-base, transparent)) 70.55% );
+                --gradient-promo:linear-gradient( 130deg, var(--color-comet-6), var(--color-tropical-1), var(--color-tropical-2), var(--color-tropical-3), var(--color-tropical-4), var(--color-tropical-5), var(--color-tropical-6), var(--color-tang-6) );
+                --gradient-arctic:linear-gradient( 90deg, var(--color-tang-8), var(--color-arctic-1), var(--color-arctic-2), var(--color-arctic-3), var(--color-arctic-4), var(--color-arctic-5), var(--color-comet-5) );
+                --z-index-cookies:50;
+                --z-index-popup:100;
+                --z-index-header:2000;
+                --z-index-skip-link:2100;
+                --z-index-chat:2500;
+                --z-index-overlay:3000;
+                --z-index-lightbox:4000;
+                --header-height:5rem;
+                --scroll-top:calc(var(--header-height) + var(--space-s))
+            }
+            .ck-config-layers-stratosphere{
+                --z-index-header:12000;--z-index-chat:12500;--z-index-overlay:13000;--z-index-lightbox:14000
+            }
+            .ck-theme-aqua{--color-tang-hs:215,69%;--color-comet-hs:55,100%}
+            .ck-theme-turquoise{--color-tang-hs:163,30%;--color-comet-hs:60,89%}
+            
+            :root{
+                --space-4xs:clamp(0.13rem, calc(0.09rem + 0.18vw), 0.25rem);
+                --space-3xs:clamp(0.38rem, calc(0.34rem + 0.18vw), 0.5rem);
+                --space-2xs:clamp(0.5rem, calc(0.43rem + 0.37vw), 0.75rem);
+                --space-xs:clamp(0.63rem, calc(0.51rem + 0.55vw), 1rem);
+                --space-s:clamp(1rem, calc(0.85rem + 0.74vw), 1.5rem);
+                --space-m:clamp(1.38rem, calc(1.19rem + 0.92vw), 2rem);
+                --space-l:clamp(1.63rem, calc(1.37rem + 1.29vw), 2.5rem);
+                --space-xl:clamp(2.63rem, calc(2.22rem + 2.02vw), 4rem);
+                --space-2xl:clamp(4rem, calc(3.41rem + 2.94vw), 6rem);
+                --space-3xl:clamp(6rem, calc(5.12rem + 4.41vw), 9rem)
+            }
+            :root{
+                --step--1:clamp(0.7502rem, 0.9297rem + -0.204vw, 0.8889rem);
+                --step--0-5:0.875rem;
+                --step-0:clamp(1rem, 1rem + 0vw, 1rem);
+                --step-0-5:clamp(1rem, calc(0.9632rem + 0.1838vw), 1.125rem);
+                --step-1:clamp(1.125rem, 1.0638rem + 0.3059vw, 1.333rem);
+                --step-2:clamp(1.2656rem, 1.1153rem + 0.7519vw, 1.7769rem);
+                --step-3:clamp(1.4238rem, 1.146rem + 1.3894vw, 2.3686rem);
+                --step-4:clamp(1.6018rem, 1.1443rem + 2.2875vw, 3.1573rem)
+            }
+            :root{
+                --article-step--1:clamp(0.83rem, calc(0.91rem + -0.08vw), 0.89rem);
+                --article-step-0:clamp(1rem, calc(1rem + 0vw), 1rem);
+                --article-step-1:clamp(1.13rem, calc(1.1rem + 0.11vw), 1.2rem);
+                --article-step-2:clamp(1.27rem, calc(1.21rem + 0.26vw), 1.44rem);
+                --article-step-4:clamp(1.6rem, calc(1.46rem + 0.69vw), 2.07rem);
+                --article-step-5:clamp(1.8rem, calc(1.6rem + 1.01vw), 2.49rem)
+            }
+            *,::after,::before{box-sizing:border-box}*{margin:0}
+            body,html{height:100%}
+            body{line-height:var(--body-line-height);-webkit-font-smoothing:antialiased}
+            canvas,img,picture,svg,video{display:block;max-width:100%}
+            button,input,select,textarea{font:inherit}
+            h1,h2,h3,h4,h5,h6,p{overflow-wrap:break-word}
+            body,html{height:auto;min-height:100%;scroll-behavior:smooth}
+            @media(prefers-reduced-motion:reduce){body,html{scroll-behavior:initial}}
+            html.ck-config-no-scroll,html.ck-config-no-scroll body{scroll-behavior:initial}
+            body{
+                background:var(--color-seal-1);color:var(--color-shark-1);font-size:var(--step-0);
+                font-family:var(--font-family)
+            }
+            body.is-hidden{overflow:hidden}
+            ol[role=list],ul[role=list]{list-style:none}[role=list]{padding:0}
+            blockquote:not([class]),li,p{max-width:var(--max-ch,none)}a{color:var(--a-color,var(--color-tang-5));text-decoration:none}
+            a:hover{text-decoration:underline}
+            a:focus,button:focus{
+                transition-duration:var(--transition-time-1);
+                transition-property:box-shadow;
+                outline:0;
+                box-shadow:0 0 0 calc(var(--space-4xs)/2) var(--color-seal-1),0 0 0 var(--space-4xs) var(--color-tang-5)
+            }
+            a:focus-visible,button:focus-visible{
+                transition-duration:var(--transition-time-1);
+                transition-property:box-shadow;
+                outline:0;
+                box-shadow:0 0 0 calc(var(--space-4xs)/2) var(--color-seal-1),0 0 0 var(--space-4xs) var(--color-tang-5)
+            }
+            a:focus:not(:focus-visible),button:focus:not(:focus-visible){box-shadow:none}
+            em,i{font-style:italic;font-family:var(--font-family-italic)}
+            fieldset{border:0;padding:0}
+            code:not([class*=language-]){
+                border-radius:var(--space-4xs);
+                background-color:var(--color-shark-4);
+                padding:var(--space-4xs);
+                color:var(--color-tropical-4);
+                font-size:90%
+            }
+            kbd{
+                border-style:groove;
+                border-radius:var(--space-4xs);
+                background:var(--color-shark-4);
+                padding:0 var(--space-4xs);
+                font-size:var(--step--1);
+                font-family:var(--font-family-mono)
+            }
+            img{height:auto}
+            [id]{scroll-margin-top:var(--scroll-top)}
+            sup{padding:4px;font-weight:800}
+            a:has(sup){-webkit-text-decoration:underline dashed currentColor 1px;text-decoration:underline dashed currentColor 1px}
+            h1,h2,h3{line-height:var(--headline-line-height)}
+            h1{font-size:var(--step-4)}
+            h2{font-size:var(--step-3)}
+            h3{font-size:var(--step-2)}
+            h4{font-size:var(--step-1)}
+            small{font-size:var(--step--1)}
+            .l-grid{
+                display:grid;
+                grid-template-columns:repeat(var(--l-grid-placement,auto-fill),minmax(var(--l-grid-min-item-size,16rem),var(--l-grid-max-item-size,1fr)));
+                gap:var(--l-grid-gap,var(--space-s))
+            }
+            .l-grid--50-50{--l-grid-placement:auto-fit;--l-grid-min-item-size:clamp(16rem, 50vw, 26rem)}
+            .l-group{display:flex;flex-wrap:wrap;gap:var(--l-group-gap,var(--space-xs))}
+            .l-group--m{--l-group-gap:var(--space-m)}
+            .l-group--2xs{--l-group-gap:var(--space-2xs)}
+            .l-group--4xs{--l-group-gap:var(--space-4xs)}
+            .l-group--center{align-items:center}
+            .l-group-space-between{
+                display:flex;
+                flex-wrap:wrap;
+                justify-content:space-between;
+                align-items:center;
+                gap:var(--l-group-gap,var(--space-xs))
+            }
+            .l-wrapper{margin-inline:auto;width:min(100% - var(--space-xl),var(--l-wrapper-max,88rem))}
+            .l-p-4xs{padding:var(--space-4xs)}
+            .l-pl-4xs{padding-left:var(--space-4xs)}
+            .l-pr-4xs{padding-right:var(--space-4xs)}
+            .l-ph-4xs{padding-right:var(--space-4xs);padding-left:var(--space-4xs)}
+            .l-pt-4xs{padding-top:var(--space-4xs)}
+            .l-pb-4xs{padding-bottom:var(--space-4xs)}
+            .l-pv-4xs{padding-top:var(--space-4xs);padding-bottom:var(--space-4xs)}
+            .l-p-3xs{padding:var(--space-3xs)}
+            .l-pl-3xs{padding-left:var(--space-3xs)}
+            .l-pr-3xs{padding-right:var(--space-3xs)}
+            .l-ph-3xs{padding-right:var(--space-3xs);padding-left:var(--space-3xs)}
+            .l-pt-3xs{padding-top:var(--space-3xs)}
+            .l-pb-3xs{padding-bottom:var(--space-3xs)}
+            .l-pv-3xs{padding-top:var(--space-3xs);padding-bottom:var(--space-3xs)}
+            .l-p-2xs{padding:var(--space-2xs)}
+            .l-pl-2xs{padding-left:var(--space-2xs)}
+            .l-pr-2xs{padding-right:var(--space-2xs)}
+            .l-ph-2xs{padding-right:var(--space-2xs);padding-left:var(--space-2xs)}
+            .l-pt-2xs{padding-top:var(--space-2xs)}
+            .l-pb-2xs{padding-bottom:var(--space-2xs)}
+            .l-pv-2xs{padding-top:var(--space-2xs);padding-bottom:var(--space-2xs)}
+            .l-p-xs{padding:var(--space-xs)}
+            .l-pl-xs{padding-left:var(--space-xs)}
+            .l-pr-xs{padding-right:var(--space-xs)}
+            .l-ph-xs{padding-right:var(--space-xs);padding-left:var(--space-xs)}
+            .l-pt-xs{padding-top:var(--space-xs)}
+            .l-pb-xs{padding-bottom:var(--space-xs)}
+            .l-pv-xs{padding-top:var(--space-xs);padding-bottom:var(--space-xs)}
+            .l-p-s{padding:var(--space-s)}
+            .l-pl-s{padding-left:var(--space-s)}
+            .l-pr-s{padding-right:var(--space-s)}
+            .l-ph-s{padding-right:var(--space-s);padding-left:var(--space-s)}
+            .l-pt-s{padding-top:var(--space-s)}
+            .l-pb-s{padding-bottom:var(--space-s)}
+            .l-pv-s{padding-top:var(--space-s);padding-bottom:var(--space-s)}
+            .l-p-m{padding:var(--space-m)}
+            .l-pl-m{padding-left:var(--space-m)}
+            .l-pr-m{padding-right:var(--space-m)}
+            .l-ph-m{padding-right:var(--space-m);padding-left:var(--space-m)}
+            .l-pt-m{padding-top:var(--space-m)}
+            .l-pb-m{padding-bottom:var(--space-m)}
+            .l-pv-m{padding-top:var(--space-m);padding-bottom:var(--space-m)}
+            .l-p-l{padding:var(--space-l)}
+            .l-pl-l{padding-left:var(--space-l)}
+            .l-pr-l{padding-right:var(--space-l)}
+            .l-ph-l{padding-right:var(--space-l);padding-left:var(--space-l)}
+            .l-pt-l{padding-top:var(--space-l)}
+            .l-pb-l{padding-bottom:var(--space-l)}
+            .l-pv-l{padding-top:var(--space-l);padding-bottom:var(--space-l)}
+            .l-p-xl{padding:var(--space-xl)}
+            .l-pl-xl{padding-left:var(--space-xl)}
+            .l-pr-xl{padding-right:var(--space-xl)}
+            .l-ph-xl{padding-right:var(--space-xl);padding-left:var(--space-xl)}
+            .l-pt-xl{padding-top:var(--space-xl)}
+            .l-pb-xl{padding-bottom:var(--space-xl)}
+            .l-pv-xl{padding-top:var(--space-xl);padding-bottom:var(--space-xl)}
+            .l-p-2xl{padding:var(--space-2xl)}
+            .l-pl-2xl{padding-left:var(--space-2xl)}
+            .l-pr-2xl{padding-right:var(--space-2xl)}
+            .l-ph-2xl{padding-right:var(--space-2xl);padding-left:var(--space-2xl)}
+            .l-pt-2xl{padding-top:var(--space-2xl)}
+            .l-pb-2xl{padding-bottom:var(--space-2xl)}
+            .l-pv-2xl{padding-top:var(--space-2xl);padding-bottom:var(--space-2xl)}
+            .l-p-3xl{padding:var(--space-3xl)}
+            .l-pl-3xl{padding-left:var(--space-3xl)}
+            .l-pr-3xl{padding-right:var(--space-3xl)}
+            .l-ph-3xl{padding-right:var(--space-3xl);padding-left:var(--space-3xl)}
+            .l-pt-3xl{padding-top:var(--space-3xl)}
+            .l-pb-3xl{padding-bottom:var(--space-3xl)}
+            .l-pv-3xl{padding-top:var(--space-3xl);padding-bottom:var(--space-3xl)}
+            .u-fw-regular{font-weight:400}
+            .u-fw-s-bold{font-weight:600}
+            .u-fw-bold{font-weight:700}
+            .u-fw-e-bold{font-weight:800}
+            .u-u{text-decoration:underline}
+            .u-fs-1{font-size:var(--step-4)}
+            .u-fs-2{font-size:var(--step-3)}
+            .u-fs-3{font-size:var(--step-2)}
+            .u-fs-4{font-size:var(--step-1)}
+            .u-fs-1,.u-fs-2,.u-fs-3{line-height:var(--headline-line-height)}
+            .u-fs-0-5{font-size:var(--step-0-5)}
+            .u-fs-0{font-size:var(--step-0)}
+            .u-fs--0-5{font-size:var(--step--0-5)}
+            .u-fs--1{font-size:var(--step--1)}
+            .u-ta-center{text-align:center}
+            .u-ta-right{text-align:right}
+            .u-tw-balance{text-wrap:balance}
+            .u-color-tang-5{color:var(--color-tang-5)}
+            .u-color-comet-5{color:var(--color-comet-5)}
+            .u-color-shark-1{color:var(--color-shark-1)}
+            .u-color-shark-2{color:var(--color-shark-2)}
+            .u-color-seal-1{color:var(--color-seal-1)}
+            .u-color-tropical-4{color:var(--color-tropical-4)}
+            .u-bg-seal-1{background-color:var(--color-seal-1)}
+            .u-bg-seal-2{background-color:var(--color-seal-2)}
+            .u-bg-comet-5{background-color:var(--color-comet-5)}
+            .u-bg-reef-1{background-color:var(--color-reef-1)}
+            .u-bg-reef-2{background-color:var(--color-reef-2)}
+            .u-bg-reef-3{background-color:var(--color-reef-3)}
+            .u-bg-reef-4{background-color:var(--color-reef-4)}
+            .u-bg-reef-5{background-color:var(--color-reef-5)}
+            .u-bg-reef-6{background-color:var(--color-reef-6)}
+            .u-flow-xl>*+*{margin-top:var(--space-xl)}
+            .u-flow-l>*+*{margin-top:var(--space-l)}
+            .u-flow-m>*+*{margin-top:var(--space-m)}
+            .u-flow-s>*+*{margin-top:var(--space-s)}
+            .u-flow-xs>*+*{margin-top:var(--space-xs)}
+            .u-flow>*+*{margin-top:var(--space-3xs)}
+            .u-flow-4xs>*+*{margin-top:var(--space-4xs)}
+            .u-justify-center{display:flex;justify-content:center}
+            .u-sr-only{
+                clip:rect(1px,1px,1px,1px);
+                position:absolute;clip-path:inset(50%);
+                margin:-1px;
+                padding:0;width:1px;height:1px;
+                overflow:hidden
+            }
+            .u-button-reset,.u-button-reset-inline{
+                -webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:pointer;border:none;
+                background-color:rgba(0,0,0,0);padding:0;color:currentColor;text-align:left
+            }
+            .u-button-reset{width:100%}
+            .u-hidden{visibility:hidden}
+            .u-gone{display:none}
+            .u-center{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+            .u-full-height{height:100%}
+            .u-full-width{width:100%}
+            .u-full-max-width{max-width:100%}
+            .u-sticky{position:sticky;top:var(--scroll-top)}
+            [class*=u-br-] br{display:none}
+            @media(width >= 48rem){.u-br-sm br{display:block}}
+            @media(width >= 64rem){.u-br-md br{display:block}}
+            @media(width >= 88rem){.u-br-lg br{display:block}}
+            .u-filter-shadow{filter:drop-shadow(var(--dropshadow-1))}
+            .u-skip-link{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);top:1.3em;left:.75rem}
+            .u-skip-link:focus-visible{z-index:var(--z-index-skip-link);width:auto;height:auto;clip:auto}
+            .c-accordion{
+                transition:color var(--transition-time-1);
+                border-top:1px solid var(--color-shark-4);
+                padding-block:var(--space-m)
+            }
+            .c-accordion.is-expanded .c-accordion__button{color:var(--color-tang-5)}
+            .c-accordion.is-expanded .c-accordion__button .c-sprite-icon--ui-plus{display:none}
+            .c-accordion.is-expanded .c-accordion__button .c-sprite-icon--ui-minus{display:inherit}
+            .c-accordion.is-expanded .c-accordion__content{display:block}
+            .c-accordion__header{display:flex;position:relative;align-items:center;gap:var(--space-2xs)}
+            .c-accordion__anchor{--c-copyurl-size:1.5rem;position:relative;flex-shrink:0;border-radius:50%}
+            .c-accordion__anchor .c-sprite-icon{width:var(--c-copyurl-size);height:var(--c-copyurl-size)}
+            @media(width >= 64rem){
+                .c-accordion__anchor{
+                    position:absolute;
+                    left:calc(-1.2*var(--c-copyurl-size));
+                    opacity:0;z-index:1;
+                    transition:opacity var(--transition-time-1)
+                }
+                .c-accordion.is-expanded .c-accordion__anchor,
+                .c-accordion:hover .c-accordion__anchor,
+                .c-accordion__anchor--active,
+                .c-accordion__anchor:focus{opacity:1}
+            }
+            .c-accordion__anchor-info{position:absolute;top:calc(-100% - var(--c-copyurl-size)/ 1.3);left:0;transform:translateY(-9999%);opacity:0;border:1px solid currentColor;border-radius:var(--space-3xs);background-color:var(--color-seal-1);padding:var(--space-4xs) var(--space-3xs);pointer-events:none;font-size:.875rem;white-space:nowrap}
+            .c-accordion__anchor--active{animation:anchorClicked .5s 1}
+            .c-accordion__anchor--active .c-accordion__anchor-info{animation:anchorInfo 1s 1}
+            @keyframes anchorClicked{
+                0%{box-shadow:0 0 0 0 var(--color-comet-3)}
+                100%{box-shadow:0 0 0 .75rem hsla(var(--color-comet-hs),45%,30%)}
+            }
+            @keyframes anchorInfo{
+                0%{transform:translateY(30%);opacity:0}
+                20%,80%{transform:translateY(0);opacity:1}
+                99%{transform:translateY(-30%);opacity:0}
+            }
+            .c-accordion__button{
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                gap:var(--space-s);
+                transition:color var(--transition-time-1);
+                font-size:var(--step-2)
+            }
+            .c-accordion__button .c-sprite-icon{flex-shrink:0}
+            .c-accordion__button .c-sprite-icon--ui-plus{display:inherit}
+            .c-accordion__button .c-sprite-icon--ui-minus{display:none}
+            .c-accordion__content{display:none;transition:padding-top var(--transition-time-1);padding-top:var(--space-xs)}
+            .c-accordion__content a{text-decoration:underline}
+            /* .c-banner{position:relative;border-radius:var(--c-banner-radius);background-image:var(--gradient-1)} */
+            .c-banner{
+                position:relative;
+                border-radius:var(--c-banner-radius);
+                /* background-image:url("./static/image/bg-home.png") */
+                background-image:url("https://s21.ax1x.com/2024/11/15/pA2S86x.jpg")
+            }
+            .c-banner--subtle{background-image:none;background-color:var(--color-seal-2)}
+            .c-banner--subtle .c-banner__decorations{opacity:.05}
+            .c-banner--subtle .c-banner__main{color:inherit}
+            .c-banner--tangy{background-image:var(--gradient-3);background-color:var(--color-tang-7)}
+            .c-banner__main{position:relative;color:var(--color-seal-1)}
+            .c-banner__raw{position:relative}
+            .c-banner__decorations{position:absolute;top:0;left:0;border-radius:var(--c-banner-radius);width:100%;height:100%;overflow:hidden}
+            .c-banner__deco{position:absolute}
+            .c-banner__deco .c-sprite-icon{font-size:clamp(.375rem,.2647rem + .5515vw,.75rem)}
+            .c-banner__deco--left-top{top:0;left:0}
+            .c-banner__deco--left-center{top:50%;left:0;transform:translateY(-50%)}
+            .c-banner__deco--left-bottom{bottom:0;left:0}
+            .c-banner__deco--center-top{top:0;left:50%;transform:translateX(-50%)}
+            .c-banner__deco--center{top:50%;left:50%;transform:translate(-50%,-50%)}
+            .c-banner__deco--center-half-top{top:50%;left:50%;transform:translateX(-50%)}
+            .c-banner__deco--center-bottom{bottom:0;left:50%;transform:translateX(-50%)}
+            .c-banner__deco--right-top{top:0;right:0}
+            .c-banner__deco--right-center{top:50%;right:0;transform:translateY(-50%)}
+            .c-banner__deco--right-bottom{right:0;bottom:0}
+            .c-banner__decorations--hexagons{color:var(--color-comet-5)}
+            .c-banner__decorations--hexagons .c-banner__deco--left-bottom{left:-13rem}
+            .c-banner__decorations--hexagons .c-banner__deco--right-top{top:-10rem;right:-13.6rem}
+            .c-breadcrumbs{font-size:var(--step--0-5)}
+            .c-breadcrumbs li{position:relative;flex-shrink:0;min-width:0;line-height:1.2}
+            .c-breadcrumbs li:last-child{flex-shrink:unset}
+            .c-breadcrumbs ol{display:flex;gap:1rem;font-weight:500}
+            .c-breadcrumbs li+li::before{position:absolute;top:.15rem;right:calc(100% + .4rem);transform:rotate(15deg);opacity:.65;border-right:.1rem solid currentcolor;height:.8rem;content:""}
+            .c-breadcrumbs .c-sprite-icon--ui-home{--c-sprite-icon-width:1rem;--c-sprite-icon-height:1rem}.c-breadcrumbs a,.c-breadcrumbs span{display:inline-block}.c-breadcrumbs a{text-transform:capitalize}.c-breadcrumbs [aria-current=page]{--a-color:var(--color-shark-1);max-width:100%;overflow:hidden;font-weight:600;text-decoration:none;text-overflow:ellipsis;text-wrap:nowrap}
+            .c-cta{
+                --c-cta-border-color:transparent;display:inline-block;
+                transition-duration:var(--transition-time-1);
+                transition-property:background-color,color;
+                cursor:pointer;border:1px solid var(--c-cta-border-color);
+                border-radius:var(--space-3xs);
+                background-color:var(--c-cta-background-color);
+                padding:.75rem 1.5rem;
+                color:var(--c-cta-color);
+                font-weight:700;text-align:center;text-decoration:none
+            }
+            .c-cta:focus{
+                transition-duration:var(--transition-time-1);
+                transition-property:box-shadow;outline:0;
+                box-shadow:0 0 0 calc(var(--space-4xs)/2) var(--color-seal-1),0 0 0 var(--space-4xs) var(--color-tang-5)
+            }
+            .c-cta:focus-visible{
+                transition-duration:var(--transition-time-1);
+                transition-property:box-shadow;outline:0;
+                box-shadow:0 0 0 calc(var(--space-4xs)/2) var(--color-seal-1),0 0 0 var(--space-4xs) var(--color-tang-5)
+            }.c-cta--focus-visible{
+                transition-duration:var(--transition-time-1);
+                transition-property:box-shadow;outline:0;
+                box-shadow:0 0 0 calc(var(--space-4xs)/2) var(--color-seal-1),0 0 0 var(--space-4xs) var(--color-tang-5)
+            }.c-cta:focus:not(:focus-visible){box-shadow:none}
+            .c-cta--disabled,.c-cta[disabled]{
+                --c-cta-background-color:var(--color-shark-3);
+                --c-cta-color:var(--color-seal-1);
+                --c-cta-border-color:transparent;
+                pointer-events:none
+            }
+            .c-cta:hover{--c-cta-background-color:var(--color-shark-3);text-decoration:none}
+            .c-cta--fill{--c-cta-background-color:var(--color-tang-5);--c-cta-color:var(--color-seal-1)}
+            .c-cta--fill:hover{--c-cta-background-color:var(--color-tang-5)}
+            .c-cta--addgreen{--c-cta-background-color:var(--color-shark-4);--c-cta-color:var(--color-seal-1)}
+            .c-cta--addgrenn:hover{--c-cta-background-color:var(--color-arctic-2)}
+            .c-cta--outline{
+                --c-cta-border-color:var(--color-shark-3);
+                --c-cta-background-color:var(--color-seal-1);
+                --c-cta-color:var(--color-tang-5)
+            }
+            .c-cta--outline:hover{--c-cta-background-color:var(--color-tang-4)}.c-cta--danger{--c-cta-border-color:var(--color-tropical-4);--c-cta-color:var(--color-tropical-4);--c-cta-background-color:var(--color-seal-1)}.c-cta--danger:hover{--c-cta-background-color:var(--color-reef-2)}.c-cta--high{--c-cta-border-color:transparent;--c-cta-background-color:var(--color-comet-5);--c-cta-color:var(--color-shark-1)}.c-cta--high:hover{--c-cta-background-color:var(--color-comet-6);--c-cta-color:var(--color-seal-1)}.c-cta--large{padding:1rem 2.5rem}.c-cta--small{padding:.25rem 1rem;font-weight:500;font-size:var(--step--0-5)}.c-input{--c-input-border:color-mix(in srgb, var(--color-shark-3) 50%, var(--color-mix-base, transparent));--c-input-background:var(--color-shark-5)}.c-input--hidden{display:none}.c-input--disabled{cursor:not-allowed}.c-input--disabled .c-sprite-icon{opacity:.6}.c-input__label{display:block;padding-bottom:var(--space-4xs);color:var(--color-shark-1);font-weight:700}.c-input__hint{display:block;color:var(--color-shark-2);font-weight:500;font-size:var(--step--0-5)}
+            .c-input__field{-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid var(--c-input-border);border-radius:var(--space-3xs);background-color:var(--c-input-background);padding:.75rem .75rem;resize:vertical;font-weight:580}.c-input__field:focus{transition-duration:var(--transition-time-1);transition-property:box-shadow;outline:0;box-shadow:0 0 0 calc(var(--space-4xs)/2) var(--color-seal-1),0 0 0 var(--space-4xs) var(--color-tang-5)}.c-input__field:focus-visible{transition-duration:var(--transition-time-1);transition-property:box-shadow;outline:0;box-shadow:0 0 0 calc(var(--space-4xs)/2) var(--color-seal-1),0 0 0 var(--space-4xs) var(--color-tang-5)}.c-input__field--focus-visible{transition-duration:var(--transition-time-1);transition-property:box-shadow;outline:0;box-shadow:0 0 0 calc(var(--space-4xs)/2) var(--color-seal-1),0 0 0 var(--space-4xs) var(--color-tang-5)}.c-input__field:focus:not(:focus-visible){box-shadow:none}.c-input__field::-moz-placeholder{color:var(--color-shark-2);font-weight:400}.c-input__field::placeholder{color:var(--color-shark-2);font-weight:400}.c-input__field[type=file]{position:relative;resize:none}.c-input__field[type=file]::after,.c-input__field[type=file]::before{position:absolute}.c-input__field[type=file]::before{inset:0;background-color:var(--c-input-background);padding:var(--space-2xs);content:attr(data-inputfile-text)}.c-input__field[type=file]::after{top:50%;right:var(--space-2xs);transform:translateY(-50%);transition-duration:var(--transition-time-1);transition-property:background-color;border:1px solid var(--color-shark-3);border-radius:var(--space-3xs);background-color:var(--color-seal-1);padding:var(--space-4xs) var(--space-3xs);content:attr(data-inputfile-button);color:var(--color-tang-5);font-weight:500;font-size:var(--step--1);line-height:1.25;text-transform:uppercase}[disabled] .c-input__field[type=file]::after{opacity:.5}.c-input__field[type=file]:hover:not(:disabled){cursor:pointer}.c-input__field[type=file]:hover:not(:disabled)::after{background-color:var(--color-tang-4)}.c-input__field:disabled{pointer-events:none;--c-input-border:var(--color-seal-3)}.c-input__field:disabled::-moz-placeholder{color:var(--color-shark-3)}.c-input__field:disabled,.c-input__field:disabled::placeholder{color:var(--color-shark-3)}.c-input__field--error{--c-input-border:var(--color-tropical-4);color:var(--color-tropical-4)}textarea.c-input__field{display:block;min-height:7rem}.c-input__field::-webkit-inner-spin-button,.c-input__field::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.c-input__field[type=number]{-moz-appearance:textfield}.c-input__select{display:grid;position:relative;grid-template-areas:"select";align-items:center}.c-input__select .c-input__field,.c-input__select .c-sprite-icon{grid-area:select}.c-input__select .c-sprite-icon{justify-self:end;margin-right:var(--space-2xs);pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.c-input__select .c-input__field{cursor:pointer;padding-right:var(--space-xl)}.c-input__select .c-input__field ::-ms-expand{display:none}.c-input__list-holder{display:flex;flex-wrap:wrap;gap:var(--space-3xs) var(--space-m)}.c-input__list-choice{display:inline-flex;align-items:center;gap:var(--space-2xs);cursor:pointer;line-height:1.2}.c-input__list-choice input{position:relative;flex-shrink:0;cursor:pointer;border:none;width:1.4rem;height:1.4rem;accent-color:var(--color-tang-5)}.c-input__list-choice input:focus{transition-duration:var(--transition-time-1);transition-property:box-shadow;outline:0;box-shadow:0 0 0 calc(var(--space-4xs)/2) var(--color-seal-1),0 0 0 var(--space-4xs) var(--color-tang-5)}.c-input__list-choice input:focus-visible{transition-duration:var(--transition-time-1);transition-property:box-shadow;outline:0;box-shadow:0 0 0 calc(var(--space-4xs)/2) var(--color-seal-1),0 0 0 var(--space-4xs) var(--color-tang-5)}.c-input__list-choice input--focus-visible{transition-duration:var(--transition-time-1);transition-property:box-shadow;outline:0;box-shadow:0 0 0 calc(var(--space-4xs)/2) var(--color-seal-1),0 0 0 var(--space-4xs) var(--color-tang-5)}.c-input__list-choice input:focus:not(:focus-visible){box-shadow:none}.c-input__list-choice input[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none}.c-input__list-choice input[type=radio]:after,.c-input__list-choice input[type=radio]:before{position:absolute;transition-duration:var(--transition-time-1);transition-property:opacity;border-radius:100%;pointer-events:none;content:""}.c-input__list-choice input[type=radio]:before{inset:0;border:1px solid var(--c-input-border);background-color:var(--c-input-background)}.c-input__list-choice input[type=radio]:after{opacity:0;inset:.25rem;background:var(--color-tang-5)}.c-input__list-choice input[type=radio]:checked:before{border-color:var(--color-tang-5)}.c-input__list-choice input[type=radio]:checked:after{opacity:1}.c-logo{display:block;flex-shrink:0}.c-menu__item{position:relative}.c-menu__link{--a-color:var(--color-shark-1);display:flex;align-items:center;gap:var(--space-xs);transition:background-color var(--transition-time-1);border-radius:var(--space-3xs);padding:var(--space-2xs)}.c-menu__link:hover{background-color:var(--color-tang-4);text-decoration:none}.c-menu__link--active{position:relative}.c-menu__link--active::before{position:absolute;top:50%;left:calc(var(--space-4xs)/2*-1);transform:translate(calc(var(--space-4xs)/ 2),-50%);background-color:var(--color-tang-5);width:var(--space-4xs);height:75%;content:""}.c-menu__link--highlight-comet{outline:2px solid var(--color-comet-6)}.c-menu__link--highlight-tang{outline:2px solid var(--color-tang-5)}.c-menu__link-title{display:block}.c-menu__link-desc{display:block;color:var(--color-shark-2);font-size:var(--step--1)}.c-menu__icon{--c-sprite-icon-width:2rem;--c-sprite-icon-height:2rem;flex-shrink:0;border-radius:var(--space-3xs);background-color:var(--color-seal-1);padding:.1rem}.c-menu__badge{position:absolute;top:var(--space-4xs);right:var(--space-4xs);border-radius:calc(var(--space-3xs) - var(--space-4xs));background:var(--color-tang-5);padding:.375rem .5rem;color:var(--color-seal-1);font-size:.625rem;line-height:1;text-transform:uppercase}.c-notification-promo{position:relative;background-image:var(--c-notification-promo-background,var(--gradient-promo));color:var(--color-seal-1)}.c-notification-promo__wrapper{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-2xs) var(--space-s);padding-inline-end:var(--space-m);padding-block:var(--space-xs)}@media(width >= 48rem){.c-notification-promo__wrapper{flex-wrap:nowrap}}@media(width >= 108rem){.c-notification-promo__wrapper{padding-inline-end:0}}.c-notification-promo__title{color:var(--c-notification-promo-title-color,initial);font-size:var(--step-1)}@media(width >= 64rem){.c-notification-promo__title{line-height:1}}.c-notification-promo__accent{color:var(--c-notification-promo-accent-color,var(--color-tang-5))}.c-notification-promo__content{flex-grow:1;margin-top:2px;font-weight:700}@media(width >= 64rem){.c-notification-promo__no-wrap{white-space:nowrap}}.c-notification-promo__cta{flex-shrink:0;color:var(--c-notification-promo-cta-color,var(--color-comet-5));font-weight:700;text-decoration:underline}.c-notification-promo__close{position:absolute;top:var(--space-4xs);right:var(--space-4xs);padding:var(--space-3xs);color:var(--c-notification-promo-close-color,inherit)}.c-notification-promo--arctic{--c-notification-promo-background:var(--gradient-arctic);--c-notification-promo-title-color:var(--color-seal-1);--c-notification-promo-accent-color:var(--color-comet-5);--c-notification-promo-close-color:var(--color-shark-1)}@media(width >= 48rem){.c-notification-promo--arctic{--c-notification-promo-cta-color:var(--color-tang-5)}}.c-progress-bar{--scrollAmount:0%;position:absolute;bottom:0;left:0;background-image:var(--gradient-promo);width:var(--scrollAmount);height:var(--space-4xs)}.c-sprite-icon--em{--c-sprite-icon-unit:1em}.c-sprite-icon{filter:blur(var(--c-sprite-icon-blur, 0));width:var(--c-sprite-icon-width,var(--space-l));max-width:none;height:var(--c-sprite-icon-height,var(--space-l))}[class*=c-sprite-icon--ratio-]{width:100%;height:auto}.c-sprite-icon--ratio-4\/3{aspect-ratio:4/3}.c-sprite-icon--ratio-16\/9{aspect-ratio:4/3}.c-sprite-icon__use{--c-sprite-primary-4:var(--color-tang-4);--c-sprite-primary-5:var(--color-tang-5);--c-sprite-primary-6:var(--color-tang-6);--c-sprite-secondary-3:var(--color-comet-3);--c-sprite-secondary-5:var(--color-comet-5);--c-sprite-secondary-6:var(--color-comet-6);--c-sprite-contrast-1:var(--color-seal-1);--c-sprite-contrast-3:var(--color-shark-3)}.c-sprite-icon--deco-aurora{--c-sprite-icon-blur:13px}.c-sprite-icon--lib-a11y{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-accept{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-ai{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-api{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-arrow-up{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-article{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-blog{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--lib-book{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-brackets{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4.0625 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-builder{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-calendar{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-case{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-checklist{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-ckbox{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-clock{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-cloud{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-collaboration{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-comment{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-company{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-cookie{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-demo{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-dice{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-doc-check{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-doc-outline{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-doc-toc{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-doc-word{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-doc{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-docs{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-download{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-easy-integration{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-editor{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-experience{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-export{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-flow{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-folder{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-font{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-get{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-global{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-glove{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-grammar{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-hands{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-headphones{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-html{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-image{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-import-word{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-industry{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-link{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-list{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-maintenance{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-management{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-markdown{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-math{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-multilevel{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-office{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-pagination{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-painter{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-paragraph{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-pin{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-pricing{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-private{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-productivity-pack{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-proof{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-puzzle{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-quality{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-quote{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-result{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-revision-auto{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-revision-history{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--lib-revision{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-rocket{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-search{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-server{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-shield{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-slash{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-solution{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-spell{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-success{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-support{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-table{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-talk{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-templates{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-theme{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-ticket{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-tour{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-typescript{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-vendor{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--lib-word{--c-sprite-icon-width:calc(4.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-arrow-curve-point-left{--c-sprite-icon-width:calc(2.6875 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2.0625 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-arrow-down-fill{--c-sprite-icon-width:calc(1.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-arrow-down-outline{--c-sprite-icon-width:calc(1.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-arrow-point-left{--c-sprite-icon-width:calc(1 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-arrow-point-right{--c-sprite-icon-width:calc(1 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-bulb{--c-sprite-icon-width:calc(1.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-bullet{--c-sprite-icon-width:calc(1.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-check-fill{--c-sprite-icon-width:calc(1 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-check-outline{--c-sprite-icon-width:calc(1.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-check{--c-sprite-icon-width:calc(1.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-chevrons-left{--c-sprite-icon-width:calc(1 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-chevrons-right{--c-sprite-icon-width:calc(1 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-controllers{--c-sprite-icon-width:calc(1 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-error{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-home{--c-sprite-icon-width:calc(1.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-info{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-magnify{--c-sprite-icon-width:calc(1.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-minus{--c-sprite-icon-width:calc(1 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-new-tab{--c-sprite-icon-width:calc(1 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-plus{--c-sprite-icon-width:calc(1 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-quote-slim{--c-sprite-icon-width:calc(1.9375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.625 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-star{--c-sprite-icon-width:calc(1 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-video-player{--c-sprite-icon-width:calc(1.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--ui-x{--c-sprite-icon-width:calc(1 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--deco-aurora{--c-sprite-icon-width:calc(25.875 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(18.25 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--deco-hexagons{--c-sprite-icon-width:calc(28.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(27.375 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--deco-left-blocks{--c-sprite-icon-width:calc(30.8125 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(64.6875 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--deco-left-top-curtain{--c-sprite-icon-width:calc(16 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(24 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--deco-right-blocks{--c-sprite-icon-width:calc(29 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(64.6875 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--deco-right-bottom-symbols{--c-sprite-icon-width:calc(37.625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(30.5625 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--deco-right-bottom-triangle{--c-sprite-icon-width:calc(20.5625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(10.9375 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--deco-right-bottom{--c-sprite-icon-width:calc(48 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(14.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--deco-right-top-curtain{--c-sprite-icon-width:calc(16.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(37.8125 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--deco-stripes{--c-sprite-icon-width:calc(52.1875 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(49.5625 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--deco-symbol-massive{--c-sprite-icon-width:calc(96.25 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(105.625 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--misc-chat{--c-sprite-icon-width:calc(4.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--misc-envelope{--c-sprite-icon-width:calc(16.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(16.4375 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--misc-logo-symbol{--c-sprite-icon-width:calc(4 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--misc-logo{--c-sprite-icon-width:calc(8.1875 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5625 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--social-facebook{--c-sprite-icon-width:calc(1.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--social-github{--c-sprite-icon-width:calc(1.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--social-linkedin{--c-sprite-icon-width:calc(1.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--social-reddit{--c-sprite-icon-width:calc(1.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--social-twitter{--c-sprite-icon-width:calc(1.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(1.5 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-align-left{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-certificate{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-code{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-count{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-embed{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-error{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-image{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-import-word{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-link{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-list{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-lock{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-page-break{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-page{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-phones{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-resize{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-save{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-share{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-shortcut{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-table{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-todo{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-transform{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-underline{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-uno{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-word{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--cke-zip{--c-sprite-icon-width:calc(2 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(2 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-addiction-recovery-mono{--c-sprite-icon-width:calc(7.8125 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-addiction-recovery{--c-sprite-icon-width:calc(7.8125 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-agreemint-mono{--c-sprite-icon-width:calc(6.8125 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-agreemint{--c-sprite-icon-width:calc(6.8125 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-blooksy-mono{--c-sprite-icon-width:calc(12.1875 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-blooksy{--c-sprite-icon-width:calc(12.1875 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-dtu-mono{--c-sprite-icon-width:calc(2.75 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-dtu{--c-sprite-icon-width:calc(2.75 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-flexum-mono{--c-sprite-icon-width:calc(13.3125 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-flexum{--c-sprite-icon-width:calc(13.3125 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-foraus-mono{--c-sprite-icon-width:calc(13.6875 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-foraus{--c-sprite-icon-width:calc(13.6875 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-kanbanize-mono{--c-sprite-icon-width:calc(16 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-kanbanize{--c-sprite-icon-width:calc(16 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-leadoo-mono{--c-sprite-icon-width:calc(11.9375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-leadoo{--c-sprite-icon-width:calc(11.9375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-mailchain-mono{--c-sprite-icon-width:calc(10.875 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-mailchain{--c-sprite-icon-width:calc(10.875 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-neos-mono{--c-sprite-icon-width:calc(3.625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-neos{--c-sprite-icon-width:calc(3.625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-placement-mono{--c-sprite-icon-width:calc(14.625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-placement{--c-sprite-icon-width:calc(14.625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-plutio-mono{--c-sprite-icon-width:calc(9.625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-plutio{--c-sprite-icon-width:calc(9.625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-rocketlane-mono{--c-sprite-icon-width:calc(14.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-rocketlane{--c-sprite-icon-width:calc(14.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-spotlight-mono{--c-sprite-icon-width:calc(11.625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-spotlight{--c-sprite-icon-width:calc(11.625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-steeplechasers-mono{--c-sprite-icon-width:calc(3 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-steeplechasers{--c-sprite-icon-width:calc(3 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-sulu-mono{--c-sprite-icon-width:calc(16.5625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-sulu{--c-sprite-icon-width:calc(16.5625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-tablo-mono{--c-sprite-icon-width:calc(10.3125 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}.c-sprite-icon--case-tablo{--c-sprite-icon-width:calc(10.3125 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--case-testmo-mono{
+                --c-sprite-icon-width:calc(12.375 * var(--c-sprite-icon-unit, 1rem));
+                --c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))
+            }
+            .c-sprite-icon--case-testmo{
+                --c-sprite-icon-width:calc(12.375 * var(--c-sprite-icon-unit, 1rem));
+                --c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))
+            }
+            .c-sprite-icon--partner-att{
+                --c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));
+                --c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))
+            }
+            .c-sprite-icon--partner-broadcom{
+                --c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));
+                --c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))
+            }
+            .c-sprite-icon--partner-citi{
+                --c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));
+                --c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))
+            }
+            .c-sprite-icon--partner-disney{
+                --c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));
+                --c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))
+            }
+            .c-sprite-icon--partner-drupal{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-elsevier{--c-sprite-icon-width:calc(5.8125 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-fedex{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-ibm{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-microsoft{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-mit{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-mozilla{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-nbcuniversal{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-novartis{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-pfizer{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-rakuten{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-salesforce{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-sas{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-shortcut{--c-sprite-icon-width:calc(5.8125 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-siemens{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-snapchat{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-square{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-tata{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-thomsonreuters{--c-sprite-icon-width:calc(9.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-volvo{--c-sprite-icon-width:calc(9.4375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--partner-zendesk{--c-sprite-icon-width:calc(9.8125 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-angular{--c-sprite-icon-width:calc(10.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-asp{--c-sprite-icon-width:calc(9.3125 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-bootstrap{--c-sprite-icon-width:calc(7.9375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-dotnet{--c-sprite-icon-width:calc(4.9375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-electron{--c-sprite-icon-width:calc(13.8125 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-express{--c-sprite-icon-width:calc(7.875 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-java{--c-sprite-icon-width:calc(2.0625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-laravel{--c-sprite-icon-width:calc(9.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-maven{--c-sprite-icon-width:calc(10.625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-nextjs{--c-sprite-icon-width:calc(8.5625 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-php{--c-sprite-icon-width:calc(6.6875 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-react{--c-sprite-icon-width:calc(8.75 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-spring{--c-sprite-icon-width:calc(8.25 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-symfony{--c-sprite-icon-width:calc(11.375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-typescript{--c-sprite-icon-width:calc(8.9375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-vitejs{--c-sprite-icon-width:calc(5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-vue{--c-sprite-icon-width:calc(6.5 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .c-sprite-icon--tech-webpack{--c-sprite-icon-width:calc(9.375 * var(--c-sprite-icon-unit, 1rem));--c-sprite-icon-height:calc(4 * var(--c-sprite-icon-unit, 1rem))}
+            .b-banner-hero__grid--centered-x{text-align:center}
+            .b-banner-hero__grid--centered-x>*{margin-inline:auto}
+            .b-banner-hero{--l-wrapper-max:clamp(64rem, -176rem + 300vw, 88rem)}
+            .b-banner-hero__grid{
+                display:grid;grid-template-columns:1fr;
+                gap:var(--space-s);padding-block:var(--banner-hero-block-padding,1.5rem)
+            }
+            @media(width >= 48rem){
+                .b-banner-hero__grid{grid-auto-columns:1fr;grid-auto-flow:column;align-items:center}
+            }
+            .b-banner-hero__main .c-sprite-icon{font-size:var(--step-1)}
+            @media(width >= 48rem){.b-banner-hero__main{--max-ch:50ch}}
+            .b-banner-hero__media{display:flex;justify-content:center}
+            @media(width >= 48rem){.b-banner-hero__media{justify-content:flex-end}}
+            /* .b-banner-hero__media img[src$=".png"]{width:auto;height:19rem;-o-object-fit:contain;object-fit:contain} */
+            .b-banner-hero__media img[src$=".png"]{width:auto;height:22rem;-o-object-fit:contain;object-fit:contain}
+            .b-banner-hero__media img[src$=".svg"]{will-change:contents}
+            .b-blog-promo .l-grid{align-items:center}.b-blog-promo__tagline{text-transform:uppercase}
+            .b-blog-promo__headline{--a-color:var(--color-shark-1);font-size:var(--step-2)}
+            .b-blog-promo__media a{display:block}
+            .b-blog-promo__media img{border-top-right-radius:var(--space-xs);border-top-left-radius:var(--space-xs);height:auto}
+            .b-blade-list__main{--max-ch:80ch}
+            .b-blade-list__item{display:flex;flex-direction:column;gap:var(--space-s)}
+            .b-blade-list__item+.b-blade-list__item{border-top:1px solid var(--color-shark-4)}
+            .b-blade-list__item-media img[src$=".png"]{filter:drop-shadow(var(--dropshadow-1))}
+            .b-blade-list__item-media>a{display:block}
+            @media(width >= 48rem){.b-blade-list__item{--b-blade-item-media-column:3/7;--b-blade-item-content-column:7/12;display:grid;grid-template-columns:repeat(12,1fr);grid-auto-flow:column;align-items:center;gap:var(--space-xl)}.b-blade-list__item:nth-child(even){--b-blade-item-media-column:8/12;--b-blade-item-content-column:3/8}.b-blade-list__item-media{grid-column:var(--b-blade-item-media-column)}.b-blade-list__item-content{grid-column:var(--b-blade-item-content-column)}.b-blade-list__item--large-media{--b-blade-item-media-column:2/7}.b-blade-list__item--large-media:nth-child(even){--b-blade-item-media-column:7/12;--b-blade-item-content-column:3/7}}.b-header{position:sticky;top:0;z-index:var(--z-index-header);outline:1px solid var(--color-shark-4);outline-offset:-1px;border-bottom:1px solid transparent;background-color:var(--color-seal-1)}.b-header:has(.b-header__list.is-active){position:fixed;width:100%}
+            .b-header__main{display:flex;justify-content:space-between;align-items:center;gap:var(--space-xl);height:var(--header-height)}@media(width >= 64rem){.b-header__nav{flex-grow:1}}
+            .b-header__list{position:fixed;top:0;right:0;bottom:0;left:0;transform:translateX(-100%);transition:var(--transition-time-1) ease-in-out transform;margin-top:var(--header-height);background-color:var(--color-seal-1);overflow-y:auto}.b-header__list.is-active{transform:translateX(0);visibility:visible}@media(width >= 64rem){.b-header__list{display:flex;position:static;align-items:center;gap:clamp(.95rem,-1.3967rem + 3.6667vw,1.5rem);transform:initial;margin-top:initial;background-color:initial;overflow-y:initial}}@media(width >= 79rem){.b-header__list{gap:clamp(1.5rem,-1.1667rem + 4.1667vw,2.5rem)}}.b-header__item{position:relative;margin-inline:auto;width:min(100% - var(--space-xl),88rem)}.b-header__item.is-expanded{--b-header-link-rotate:-180deg}.b-header__item.is-expanded .b-header__card{display:block}@media(width >= 64rem){.b-header__item.is-expanded .b-header__card{visibility:visible;opacity:1;pointer-events:auto}}@media(width >= 64rem){.b-header__item:not(.is-expanded):hover .b-header__card{visibility:visible;opacity:1;transition:opacity 0s linear .28s;pointer-events:auto}}.b-header__item:not(.is-expanded):hover .b-header__title::before{transform:translateX(-50%) scaleX(1)}@media(width >= 64rem){.b-header__item:first-child:hover .b-header__card{left:calc(var(--space-2xl)*-2.4)}}.b-header__item:last-child{padding-top:var(--space-s)}.b-header__item+.b-header__item{border-top:1px solid var(--color-shark-4)}@media(width >= 64rem){.b-header__item{margin-inline:initial;border-top:initial;width:initial}.b-header__item+.b-header__item{flex-shrink:0;border-top:initial}.b-header__item:nth-last-child(2){margin-left:auto}.b-header__item:last-child{padding-top:initial}}.b-header__link{--a-color:var(--color-shark-1);display:flex;justify-content:space-between;align-items:center;gap:var(--space-3xs);padding-block:var(--space-s);font-weight:700}.b-header__link:hover{text-decoration:none}@media(width >= 64rem){.b-header__link{padding-block:var(--space-2xs)}button.b-header__link{cursor:default;pointer-events:none}}.b-header__link .c-sprite-icon--ui-arrow-down-outline{transform:rotate(var(--b-header-link-rotate));transition:var(--transition-time-1) ease-in-out transform;font-size:var(--step--1);fill:var(--color-tang-5)}@media(width >= 64rem){.b-header__link .c-sprite-icon--ui-arrow-down-outline{transform:initial}}.b-header__link.is-expanded{--b-header-link-rotate:-180deg}.b-header__link.is-expanded~.b-header__card{display:block}@media(width >= 64rem){.b-header__link.is-expanded~.b-header__card{display:none}}.b-header__title{position:relative;pointer-events:all}@media(width >= 64rem){.b-header__title{pointer-events:none}}.b-header__title::before{position:absolute;bottom:calc(var(--space-4xs)*-1);left:50%;transform:translateX(-50%) scaleX(0);transition:transform var(--transition-time-1);background-color:var(--color-tang-5);width:80%;height:.125rem;content:""}.b-header__title--active::before{transform:translateX(-50%) scaleX(1)}.b-header__card{display:none}@media(width >= 64rem){.b-header__card{display:block;position:absolute;top:100%;left:calc(var(--space-2xl)*-3.4);visibility:hidden;opacity:0;z-index:var(--z-index-overlay);box-shadow:var(--shadow-1);border:1px solid var(--color-seal-1);border-radius:var(--space-3xs);background-color:var(--color-seal-1);padding:var(--space-m);pointer-events:none}}.b-header__card-grid{display:grid;gap:var(--space-l);padding-bottom:var(--space-s)}@media(width >= 64rem){.b-header__card-grid{grid-template-columns:15rem 18rem;grid-auto-columns:18rem;grid-auto-flow:column;padding-bottom:initial}}
+            .b-header__card-col+.b-header__card-col{position:relative}
+            @media(width >= 64rem){.b-header__card-col+.b-header__card-col::before{position:absolute;top:0;left:calc(var(--space-l)/-2);background-color:var(--color-seal-2);width:1px;height:100%;content:""}}.b-header__card-col+.b-header__card-col--sub-column{margin-top:calc(var(--space-l)*-1)}@media(width >= 64rem){.b-header__card-col+.b-header__card-col--sub-column{margin-top:var(--space-l)}.b-header__card-col+.b-header__card-col--sub-column::before{content:none}}@media screen and (height <= 46rem){.b-header__card-col .c-menu__link{padding:var(--space-4xs)}}.b-header__card-col a:has(picture){display:block}.b-header__card-col-media{border-radius:var(--space-4xs);overflow:hidden}.b-header__card-col-media img[src*=header-case]{width:auto;max-height:4rem}.b-header__list-trigger{position:relative;flex-shrink:0;width:2rem;height:2rem;overflow:hidden;text-indent:-600rem}@media(width >= 64rem){.b-header__list-trigger{display:none}}.b-header__list-trigger::after,.b-header__list-trigger::before{position:absolute;left:0;transition-duration:var(--transition-time-1);transition-property:transform,top,width;transition-timing-function:ease-in-out;border-radius:var(--space-xs);background-color:currentColor;height:var(--space-4xs);content:""}.b-header__list-trigger::before{top:var(--space-3xs);width:100%}.b-header__list-trigger::after{top:calc(50% + var(--space-4xs));transform:translateY(-50%);width:60%}.b-header__list-trigger.is-active::before{top:50%;transform:translateY(-50%) rotate(45deg)}.b-header__list-trigger.is-active::after{top:50%;transform:translateY(-50%) rotate(-45deg);width:100%}.b-nutshell img[src$=".png"]{filter:drop-shadow(var(--dropshadow-1))}@media(width >= 64rem){.b-nutshell__list{margin-left:var(--space-xl)}}.b-nutshell__list-content{--max-ch:85%}.b-nutshell__list-content a{text-decoration:underline}.b-nutshell__list-content a:hover{text-decoration:none}
+            .b-partners{--l-wrapper-max:80rem}
+            .b-partners__track{
+                --slide-duration:30s;display:grid;
+                grid-template-columns:repeat(14,9rem);
+                gap:1.8rem;
+                -webkit-mask:linear-gradient(90deg,rgba(0,0,0,0),#000 5% 95%,rgba(0,0,0,0));
+                mask:linear-gradient(90deg,rgba(0,0,0,0),#000 5% 95%,rgba(0,0,0,0));
+                overflow:hidden
+            }
+            .b-partners__track:hover .b-partners__slide{animation-play-state:paused}
+            .b-partners__slide{
+                grid-area:1/1;
+                animation:slide-animation var(--slide-duration) linear infinite;
+                width:100%
+            }
+            .b-partners__slide:nth-child(2){animation-delay:calc(-.0714285714 * var(--slide-duration))}
+            .b-partners__slide:nth-child(3){animation-delay:calc(-.1428571429 * var(--slide-duration))}
+            .b-partners__slide:nth-child(4){animation-delay:calc(-.2142857143 * var(--slide-duration))}
+            .b-partners__slide:nth-child(5){animation-delay:calc(-.2857142857 * var(--slide-duration))}
+            .b-partners__slide:nth-child(6){animation-delay:calc(-.3571428571 * var(--slide-duration))}
+            .b-partners__slide:nth-child(7){animation-delay:calc(-.4285714286 * var(--slide-duration))}
+            .b-partners__slide:nth-child(8){animation-delay:calc(-.5 * var(--slide-duration))}
+            .b-partners__slide:nth-child(9){animation-delay:calc(-.5714285714 * var(--slide-duration))}
+            .b-partners__slide:nth-child(10){animation-delay:calc(-.6428571429 * var(--slide-duration))}
+            .b-partners__slide:nth-child(11){animation-delay:calc(-.7142857143 * var(--slide-duration))}
+            .b-partners__slide:nth-child(12){animation-delay:calc(-.7857142857 * var(--slide-duration))}
+            .b-partners__slide:nth-child(13){animation-delay:calc(-.8571428571 * var(--slide-duration))}
+            .b-partners__slide:nth-child(14){animation-delay:calc(-.9285714286 * var(--slide-duration))}
+            @keyframes slide-animation{6.0975609756%{transform:translate(-100%)}6.1075609756%{transform:translate(1540%)}}
+            
+        </style>
+        <link rel="icon" type="image/png" href="https://s21.ax1x.com/2024/11/17/pAReUoR.jpg" sizes="32x32">
+        <link rel="icon" type="image/png" href="https://s21.ax1x.com/2024/11/17/pAReUoR.jpg" sizes="96x96">
+        <meta name="description" content="Full Documentation and Support. Trusted by 20k+ companies.">
+        <link rel="canonical" href="https://milaifon.com/">
+    </head>
+<body>
+    <header class="b-header">
+        <div class="l-wrapper">
+            <div class="b-header__main">
+                <a class="c-logo" href="https://milaifon.com" aria-label="Milaifon-logo">
+                    <img width="131" height="25" src="./static/image/logo-milaifon.svg" alt="logo-milaifon">
+                </a>
+                <nav class="b-header__nav" aria-label="Main">
+                    <button class="u-button-reset b-header__list-trigger js-header-list-trigger" aria-label="Menu"></button>
+                    <ul class="b-header__list js-header-list js-accordion js-accordion-dynamic" role="list">
+                        <li class="b-header__item js-has-submenu js-accordion__item"><!--自媒体-->
+                            <button class="b-header__link u-button-reset js-accordion__trigger js-menu-card-trigger">
+                                <span class="b-header__title">自媒体</span>
+                                <svg class="c-sprite-icon c-sprite-icon--ui-arrow-down-outline c-sprite-icon--em" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m12.702 16.729 8.01-7.575a.902.902 0 0 0 0-1.317l-.59-.558a.943.943 0 0 0-.315-.2 1.048 1.048 0 0 0-.762 0 .943.943 0 0 0-.315.2l-6.726 6.36L5.27 7.273a.95.95 0 0 0-.315-.2A1.056 1.056 0 0 0 4.574 7c-.264 0-.511.097-.696.272l-.59.558a.902.902 0 0 0 0 1.317l8.017 7.582a.952.952 0 0 0 .317.2 1.058 1.058 0 0 0 .763 0 .952.952 0 0 0 .317-.2Z" style="fill:var(--c-sprite-primary-5)"></path>
+                                </svg>
+                            </button>
+                            <div class="b-header__card js-accordion__content">
+                                <div class="b-header__card-grid">
+                                    <div class="b-header__card-col u-flow-xs">
+                                        <p class="u-fw-bold u-color-tang-5">自媒体站点</p>
+                                        <ul class="c-menu u-flow" role="list">
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/ckeditor-5/">
+                                                    <span class="c-menu__icon">
+                                                        <img class="c-sprite-icon" aria-hidden="true" role="img" src="https://s1.aigei.com/src/img/png/db/db6a2447d5f64918b3b0e239551ea24c.png?e=1735488000&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:8rQTc6mnaGtjRAuuY1iosmaAR7M=" width="32" height="32"/>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">视频号</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/ckeditor-5/features/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-checklist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">Features</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/ckeditor-5/demo/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-demo"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">Demos</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/ckeditor-5/builder/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-builder"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">Builder</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/docs/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-article"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">Documentation</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/ckeditor-5/download/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-download"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">Download</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="b-header__card-col u-flow-xs">
+                                        <p class="u-fw-bold u-color-tang-5">主题合辑</p>
+                                        <ul class="c-menu u-flow" role="list">
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/collaboration/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-collaboration"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">视频剪辑</span>
+                                                        <span class="c-menu__link-desc">Track Changes, Comments and Revision History. Available in real time or non-simultaneously.</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/productivity-pack/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-productivity-pack"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">音乐原创</span>
+                                                        <span class="c-menu__link-desc">Enhance document editing and accelerate content creation for your team.</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/export-to-pdf-word/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-export"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">Export to PDF/Word</span>
+                                                        <span class="c-menu__link-desc">Easily convert your content into popular document formats.</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/import-from-word/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-import-word"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">Import from Word</span>
+                                                        <span class="c-menu__link-desc">Quickly import any amount of Word documents to CKEditor 5.</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="b-header__card-col u-flow-xs b-header__card-col--sub-column">
+                                        <ul class="c-menu u-flow" role="list">
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link c-menu__link--highlight-comet" href="/ai-assistant/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-ai"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="c-menu__badge">New</span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">AI Assistant</span>
+                                                        <span class="c-menu__link-desc">Write, rephrase, summarize, translate and more using the power of AI.</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/file-management/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-management"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">File Management</span>
+                                                        <span class="c-menu__link-desc">Flexible image upload and file management solutions.</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/spellchecker/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-spell"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">Spell and grammar check</span>
+                                                        <span class="c-menu__link-desc">Multilingual proofreading and custom dictionaries.</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b-header__item js-has-submenu js-accordion__item"><!--编程学习-->
+                            <button class="b-header__link u-button-reset js-accordion__trigger js-menu-card-trigger">
+                                <span class="b-header__title">编程学习</span>
+                                <svg class="c-sprite-icon c-sprite-icon--ui-arrow-down-outline c-sprite-icon--em" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m12.702 16.729 8.01-7.575a.902.902 0 0 0 0-1.317l-.59-.558a.943.943 0 0 0-.315-.2 1.048 1.048 0 0 0-.762 0 .943.943 0 0 0-.315.2l-6.726 6.36L5.27 7.273a.95.95 0 0 0-.315-.2A1.056 1.056 0 0 0 4.574 7c-.264 0-.511.097-.696.272l-.59.558a.902.902 0 0 0 0 1.317l8.017 7.582a.952.952 0 0 0 .317.2 1.058 1.058 0 0 0 .763 0 .952.952 0 0 0 .317-.2Z" style="fill:var(--c-sprite-primary-5)"></path>
+                                </svg>
+                            </button>
+                            <div class="b-header__card js-accordion__content">
+                                <div class="b-header__card-grid">
+                                    <div class="b-header__card-col u-flow-xs">
+                                        <p class="u-fw-bold u-color-tang-5">我的编程学习园地</p>
+                                        <ul class="c-menu u-flow" role="list">
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/ckbox/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-tour"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">Python</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/ckbox/demo/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-demo"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">AI Station</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/pricing/#plan-ckbox">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-pricing"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">第三方资源</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/docs/ckbox/latest/features/index.html">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-article"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">Documentation</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="b-header__card-col u-flow-xs">
+                                        <p class="u-fw-bold u-color-tang-5">Hexo主题</p>
+                                        <a href="./pages/hexo-theme.html">
+                                            <picture class="b-header__card-col-media">
+                                                <source type="image/avif" srcset="/assets/images/avif-small/illustration/header-ckbox-demo-c553f62e04.avif" media="(max-width: 48rem)"/>
+                                                <source type="image/avif" srcset="/assets/images/avif/illustration/header-ckbox-demo-eafde2497a.avif" media="(min-width: calc(48rem + 1px))"/>
+                                                <img src="/assets/images/illustration/header-ckbox-demo.png" alt="Mockup of CKBox" loading="lazy" decoding="async" / width="652" height="423">
+                                            </picture>
+                                        </a>
+                                        <p class="u-fs--1 u-color-shark-2">The modern, secure way to upload and store your images and files. Edit images in CKBox, then add them into CKEditor.</p>
+                                        <a class="c-cta c-cta--outline" href="/ckbox/demo/" data-seo="header-menu-ckbox-demo-button">云哥博客</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b-header__item">
+                            <a class="b-header__link" href="/ckeditor-5/demo/">
+                                <span class="b-header__title">Demos</span>
+                            </a>
+                        </li>
+                        <li class="b-header__item"><!--我的曲库-->
+                            <a class="b-header__link" href="./music/index.html">
+                                <span class="b-header__title">我的曲库</span>
+                            </a>
+                        </li>
+                        <li class="b-header__item js-has-submenu js-accordion__item"><!--AI导航-->
+                            <button class="b-header__link u-button-reset js-accordion__trigger js-menu-card-trigger">
+                                <span class="b-header__title">AI导航</span>
+                                <svg class="c-sprite-icon c-sprite-icon--ui-arrow-down-outline c-sprite-icon--em" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m12.702 16.729 8.01-7.575a.902.902 0 0 0 0-1.317l-.59-.558a.943.943 0 0 0-.315-.2 1.048 1.048 0 0 0-.762 0 .943.943 0 0 0-.315.2l-6.726 6.36L5.27 7.273a.95.95 0 0 0-.315-.2A1.056 1.056 0 0 0 4.574 7c-.264 0-.511.097-.696.272l-.59.558a.902.902 0 0 0 0 1.317l8.017 7.582a.952.952 0 0 0 .317.2 1.058 1.058 0 0 0 .763 0 .952.952 0 0 0 .317-.2Z" style="fill:var(--c-sprite-primary-5)"></path>
+                                </svg>
+                            </button>
+                            <div class="b-header__card js-accordion__content">
+                                <div class="b-header__card-grid">
+                                    <div class="b-header__card-col u-flow-xs">
+                                        <p class="u-fw-bold u-color-tang-5">AI 工具导航</p>
+                                        <ul class="c-menu u-flow" role="list">
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/collaboration/">
+                                                    <span class="c-menu__icon">
+                                                        <img alt="coze" class="c-sprite-icon" aria-hidden="true" role="img" src="https://lf3-lv-buz.vlabstatic.com/obj/image-lvweb-buz/common/images/dreamina-v1.ico">
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">扣子</span>
+                                                        <span class="c-menu__link-desc">文生图/视频生成</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="https://www.doubao.com/chat">
+                                                    <span class="c-menu__icon">
+                                                        <img alt="duobao" class="c-sprite-icon" aria-hidden="true" role="img" src="https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/web/logo-icon.png">
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">豆包</span>
+                                                        <span class="c-menu__link-desc">字节跳动旗下AI助手</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="https://modelscope.cn/home">
+                                                    <span class="c-menu__icon">
+                                                        <img alt="duobao" class="c-sprite-icon" aria-hidden="true" role="img" src="https://g.alicdn.com/sail-web/maas/2.2.3/favicon/128.ico">
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">魔搭<code>阿里开源AI生态</code></span>
+                                                        <!-- <span class="c-menu__link-desc"></span> -->
+                                                        <span  class="c-menu__link-desc">
+                                                            <p class="c-menu__link-desc">
+                                                                <a alt="图生视频" href="https://modelscope.cn/studios/ZhipuAI/CogVideoX-5b-demo/">图生视频</a>
+                                                                <a alt="文生图" href="https://modelscope.cn/studios/AI-ModelScope/flux">文生图</a>
+                                                                <a alt="照片修复" href="https://modelscope.cn/studios/iic/old_photo_restoration">照片修复</a>
+                                                            </p>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/import-from-word/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-import-word"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">Import from Word</span>
+                                                        <span class="c-menu__link-desc">Quickly import any amount of Word documents to CKEditor 5.</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="b-header__card-col u-flow-xs">
+                                        <p class="u-fw-bold u-color-tang-5">AI 视频生成（国）</p>
+                                        <ul class="c-menu u-flow" role="list">
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link c-menu__link--highlight-comet" href="https://kling.kuaishou.com/">
+                                                    <span class="c-menu__icon">
+                                                        <img class="c-sprite-icon" aria-hidden="true" role="img" alt="可灵" src="https://s2-111386.kwimgs.com/bs2/mmu-aiplatform-temp/kling/kling-logo.png">
+                                                    </span>
+                                                    <span class="c-menu__badge">No.1</span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">可灵大模型</span>
+                                                        <span class="c-menu__link-desc">快手出品，目前国产头把交椅，功能强大.<br><code class="c-menu__link-desc">Web版白嫖，送66积分/天</code></span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="https://hailuoai.video/">
+                                                    <span class="c-menu__icon">
+                                                        <img class="c-sprite-icon" aria-hidden="true" role="img" alt="海螺" src="https://hailuoai.video/assets/logo/favicon.png">
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">海螺AI视频</span>
+                                                        <span class="c-menu__link-desc">MiniMax旗下的视频生成应用海螺AI，<br>跨时代人物互动，创意特效层出不穷.</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="https://jimeng.jianying.com">
+                                                    <span class="c-menu__icon">
+                                                        <img class="c-sprite-icon" aria-hidden="true" role="img" alt="即梦" src="https://lf3-lv-buz.vlabstatic.com/obj/image-lvweb-buz/common/images/dreamina-v1.ico">
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">即梦AI</span>
+                                                        <span class="c-menu__link-desc">字节出品，功能全面，AI视频效果惊艳，支持一键做同款和对口型数字人功能.</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="https://app.pixverse.ai">
+                                                    <span class="c-menu__icon">
+                                                        <img class="c-sprite-icon" aria-hidden="true" role="img" alt="Pixverse" src="https://cdn.pixverse.ai/app/app-pixverse/favicon-pixverse.svg">
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">Pixverse</span>
+                                                        <span class="c-menu__link-desc">爱诗科技出品，实测效果超过海螺和即梦，特效丰富，可控元素比较多.</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="https://chatglm.cn">
+                                                    <span class="c-menu__icon">
+                                                        <img class="c-sprite-icon" aria-hidden="true" role="img" alt="智谱清言" src="https://chatglm.cn/img/icons/favicon-32x32.png">
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">智谱清言</span>
+                                                        <span class="c-menu__link-desc">可生10秒、4k、60帧超高清画质，支持任意比例图像生成视频，一次生成4个视频.</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="https://vidu.studio/zh">
+                                                    <span class="c-menu__icon">
+                                                        <img class="c-sprite-icon" aria-hidden="true" role="img" alt="Vidu AI" src="https://www.vidu.studio/logo.svg">
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">Vidu AI</span>
+                                                        <span class="c-menu__link-desc">核心团队成员出自清华大学人工智能研究院，性能对标OpenAI Sora.</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b-header__item js-has-submenu js-accordion__item"><!--我的视界-->
+                            <button class="b-header__link u-button-reset js-accordion__trigger js-menu-card-trigger">
+                                <span class="b-header__title">我的视界</span>
+                                <svg class="c-sprite-icon c-sprite-icon--ui-arrow-down-outline c-sprite-icon--em" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m12.702 16.729 8.01-7.575a.902.902 0 0 0 0-1.317l-.59-.558a.943.943 0 0 0-.315-.2 1.048 1.048 0 0 0-.762 0 .943.943 0 0 0-.315.2l-6.726 6.36L5.27 7.273a.95.95 0 0 0-.315-.2A1.056 1.056 0 0 0 4.574 7c-.264 0-.511.097-.696.272l-.59.558a.902.902 0 0 0 0 1.317l8.017 7.582a.952.952 0 0 0 .317.2 1.058 1.058 0 0 0 .763 0 .952.952 0 0 0 .317-.2Z" style="fill:var(--c-sprite-primary-5)"></path>
+                                </svg>
+                            </button>
+                            <div class="b-header__card js-accordion__content">
+                                <div class="b-header__card-grid">
+                                    <div class="b-header__card-col u-flow-xs">
+                                        <ul class="c-menu u-flow" role="list">
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/docs/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-article"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">朝花夕拾</span>
+                                                        <span class="c-menu__link-desc">记忆中的美好</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" target="_blank" rel="noopener" href="https://support.ckeditor.com/hc/en-us/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-talk"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">白驹过隙</span>
+                                                        <span class="c-menu__link-desc">灵光一现的好创意</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="c-menu__item">
+                                                <a class="c-menu__link" href="/contact/">
+                                                    <span class="c-menu__icon">
+                                                        <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                                            <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-support"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="u-flow-4xs">
+                                                        <span class="c-menu__link-title u-fw-bold">Contact us</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="b-header__card-col u-flow-xs">
+                                        <p class="u-fw-bold">T3 日记</p><!--发表在Hashnode-->
+                                        <a href="">
+                                            <picture class="b-header__card-col-media">
+                                                <source type="image/avif" srcset="/assets/images/avif-small/illustration/header-quick-a94c88594f.avif" media="(max-width: 48rem)"/>
+                                                <source type="image/avif" srcset="/assets/images/avif/illustration/header-quick-9399fa0890.avif" media="(min-width: calc(48rem + 1px))"/>
+                                                <img src="/assets/images/illustration/header-quick.png" alt="Mockup of CKEditor in browser with avatars of collaborators overlayed" loading="lazy" decoding="async" / width="652" height="422">
+                                            </picture>
+                                        </a>
+                                        <a class="c-cta c-cta--outline" href="">浏览博客</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b-header__item">
+                            <a class="b-header__link" target="_blank" rel="noopener" href="//milaifon.com/login">
+                                <span class="b-header__title">管理员</span>
+                            </a>
+                        </li>
+                        <li class="b-header__item">
+                            <a class="c-cta c-cta--addgreen" href="/members/">白名单登录</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="t-home" tabindex="-1">
+        <section class="b-banner-hero" js-data-content="js-data-content">
+            <div class="c-banner">
+                <div class="c-banner__decorations c-banner__decorations--default" aria-hidden="true">
+                    <div class="c-banner__deco c-banner__deco--left-top">
+                        <svg class="c-sprite-icon c-sprite-icon--deco-left-top-curtain c-sprite-icon--em" aria-hidden="true" role="img">
+                            <use class="c-sprite-icon__use" href="https://ckeditor.com/assets/images/sprite/core/svg-symbols-c145179971.svg#deco-left-top-curtain"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="c-banner__main">
+                    <div class="l-wrapper">
+                        <div class="b-banner-hero__grid">
+                            <div class="u-flow-xs b-banner-hero__main">
+                                <h1 class="u-br-sm">Milaifon's <span class="u-color-comet-5">HomePage</span> <br>Independent media <br>Gateway</h1>
+                                <p class="u-br-sm">编程爱好者：Python Web3 CSS, AI practice, 小程序. <br>独立自媒体：怀旧、音乐、视频剪辑.</p>
+                                <div class="l-group l-pt-xs">
+                                    <a class="c-cta c-cta--high" href="/">作品集</a>
+                                    <a class="c-cta c-cta--outline" href="" target="blank" rel="nofollow" style="text-wrap: inline;">
+                                        <div class="padding-left" style="display: inline-flex;">
+                                            <img alt="github" src="https://github.githubassets.com/favicons/favicon.png" width="16" height="16"/>
+                                            <span class="p">GitHub</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="b-banner-hero__media">
+                                <picture>
+                                    <img src="https://s21.ax1x.com/2024/11/15/pA2SAlq.png" alt="" decoding="async" fetchpriority="high" / width="640" height="auto">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <section class="b-partners">
+            <div class="l-pv-m u-flow-m">
+                <div class="b-partners__track">
+                    <a class="b-partners__slide" alt="" href="">
+                        <img src="https://lf3-lv-buz.vlabstatic.com/obj/image-lvweb-buz/common/images/dreamina-v1.ico" width="64px" height="64px" aria-hidden="true" role="img"/>
+                        <p>扣子 AI</p>
+                    </a>
+                    <a class="b-partners__slide" alt="" href="https://scni4ms4en3h.feishu.cn/next/workplace/">
+                        <img src="./static/image/logo-feishu.png" width="64px" height="64px" aria-hidden="true" role="img"/>
+                        <p>飞书图表</p>
+                    </a>
+                    <a class="b-partners__slide" alt="" href="https://fllowus.cn">
+                        <img src="https://cdn2.flowus.cn/assets/_next/static/media/favicon.0c45c594.png" width="64px" height="64px" aria-hidden="true" role="img"/>
+                        <p>息流笔记</p>
+                    </a>
+                    <a class="b-partners__slide" alt="" href="https://imgse.com/">
+                        <img src="https://imgse.com/content/images/system/favicon_1587118523486_91617a.png" width="64px" height="64px" aria-hidden="true" role="img"/>
+                        <p>路过图床</p>
+                    </a>
+                    <a class="b-partners__slide" alt="" href="https://d1tools.com/tools/background-removal/">
+                        <img src="https://d1tools.com/favicon.svg" width="64px" height="64px" aria-hidden="true" role="img"/>
+                        <p>一键抠图</p>
+                    </a>
+                    <a class="b-partners__slide" alt="" href="https://minipic.app/">
+                        <img src="https://minipic.app/favicon.ico" width="64px" height="64px" aria-hidden="true" role="img"/>
+                        <p>图片压缩</p>
+                    </a>
+                    <a class="b-partners__slide" alt="" href="https://reg.summit.graphql.com/flow/apollo/summit24/graphqlsummitvirtual24/page/virtualcatalog?search=">
+                        <img src="https://static.rainfocus.com/apollo/summit24/static/apollo/staticfile/favicon_symbol_03_2x_1710874508785001Bj0w.png" width="64px" height="64px" aria-hidden="true" role="img"/>
+                        <p>GraphQL</p>
+                    </a>
+                    <a class="b-partners__slide" alt="" href="https://svg.la/zh/">
+                        <img src="https://svg.la/favicons/favicon-32x32.png" width="64px" height="64px" aria-hidden="true" role="img"/>
+                        <p>SVG工具</p>
+                    </a>
+                    <a class="b-partners__slide" alt="" href="https://color-dust.yunyoujun.cn/zh"><!--图片取色 开源-->
+                        <img src="https://color-dust.yunyoujun.cn/_nuxt/icons/icon_64x64.766263.png" width="64px" height="64px" aria-hidden="true" role="img"/>
+                        <p>图片取色</p>
+                    </a>
+                    <a class="b-partners__slide" alt="" href="https://colordesigner.io/convert/hextohsl"><!--色值转换-->
+                        <img src="https://colordesigner.io/favicons/favicon.ico" width="64px" height="64px" aria-hidden="true" role="img"/>
+                        <p>色值转换</p>
+                    </a>
+                    <a class="b-partners__slide" alt="" href="">
+                        <img src="https://lf3-lv-buz.vlabstatic.com/obj/image-lvweb-buz/common/images/dreamina-v1.ico" width="64px" height="64px" aria-hidden="true" role="img"/>
+                    </a>
+                    <a class="b-partners__slide" alt="" href="">
+                        <img src="https://lf3-lv-buz.vlabstatic.com/obj/image-lvweb-buz/common/images/dreamina-v1.ico" width="64px" height="64px" aria-hidden="true" role="img"/>
+                    </a>
+                    <a class="b-partners__slide" alt="" href="">
+                        <img src="https://lf3-lv-buz.vlabstatic.com/obj/image-lvweb-buz/common/images/dreamina-v1.ico" width="64px" height="64px" aria-hidden="true" role="img"/>
+                    </a>
+                    <a class="b-partners__slide" alt="" href="">
+                        <img src="https://lf3-lv-buz.vlabstatic.com/obj/image-lvweb-buz/common/images/dreamina-v1.ico" width="64px" height="64px" aria-hidden="true" role="img"/>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
