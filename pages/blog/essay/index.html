@@ -1,17 +1,29 @@
-<!DOCTYPE html><!-- UI fork from: https://ckeditor.com/ -->
-<html class="p-home" lang="zh_CN">
+<!DOCTYPE html><html class="p-ckeditor-5-demo" lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>HomePage | Milaifon</title>
+        <title>Hexo Theme | Milaifon</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preload" href="https://fonts.gstatic.com/l/font?kit=1Ptvg83HX_SGhgqU3QAqQqFdk_S_53g2xIaoNp0VDhtw7-GVUBN0tDQ-67CvTk-woiU_UymhWc6uZamsR35zmHRfyzWjoiw7o7kw5Cy088v_cJioRmLZRm08KDflvUOWty8hPgdtcVu4hVhYfQmRqWPaBdO7adZNQsVhb8oToLK7UG8_MTWYxyrFShMhBKmnzy0XyKKLH_Q89uZrWu2rYhhnLhdKxg2CnmYwqGxijs-n0LoDdxSPkwRgDJeMpUxhk0hQbBsPKJ4JCP74b5nykcZ4rGDnPGwm_iO5USqol9uqm7_w7A7PhqgZow2jCK7oqkW1plEbhX5jrnvG_MPQMBhuARiHDaK_XQ3he9wD0aM_oth0NaNtLhFM45mYLBU49w_1yGsCUVeHq53m8C8MbLFK7HhqcRtbBEdWFQZ28CTF4JAuATIfDt8aGg6pa8CrZb4sNxWxr-80J1zQ6I6h86FlZh1Xg1G6O8ZcnnHI8IP0oAZ13cP-OADgm4HKZjYO27dCopWJxswwZD6gOJ2_7WOW0ybWci8ZYN9V27q-6WMuxz2nDekyW2m0aogrgmOlG7d05z0GdLiYzdUsRpEHDl3BosSq7QtHjd3bAC4a1wqeZmLSAxJYEoy0C8nnXOEftfYU9fkFttnbZc5iLXLxcGwMRFWOzMZRSa4M2xd9Mv1B59HwMgtdBeZwS5CKa4HcUVsdb4r4qQZYXe3jvqMFgNdSQ6Q3VqSO1KI&amp;skey=9f5b077cc22e75c7&amp;v=v13" as="font" type="font/woff2" crossorigin>
-        <!-- <link rel="stylesheet" href="nova-50dae2189b.css"> 手机界面导航未实现-->
+        <link rel="stylesheet" href="nova-50dae2189b.css"><!-- 手机界面导航未实现-->
         <style id="nova-critical-css">
-            @font-face{font-style:normal;font-weight:300 800;src:url(https://fonts.gstatic.com/l/font?kit=1Ptvg83HX_SGhgqU3QAqQqFdk_S_53g2xIaoNp0VDhtw7-GVUBN0tDQ-67CvTk-woiU_UymhWc6uZamsR35zmHRfyzWjoiw7o7kw5Cy088v_cJioRmLZRm08KDflvUOWty8hPgdtcVu4hVhYfQmRqWPaBdO7adZNQsVhb8oToLK7UG8_MTWYxyrFShMhBKmnzy0XyKKLH_Q89uZrWu2rYhhnLhdKxg2CnmYwqGxijs-n0LoDdxSPkwRgDJeMpUxhk0hQbBsPKJ4JCP74b5nykcZ4rGDnPGwm_iO5USqol9uqm7_w7A7PhqgZow2jCK7oqkW1plEbhX5jrnvG_MPQMBhuARiHDaK_XQ3he9wD0aM_oth0NaNtLhFM45mYLBU49w_1yGsCUVeHq53m8C8MbLFK7HhqcRtbBEdWFQZ28CTF4JAuATIfDt8aGg6pa8CrZb4sNxWxr-80J1zQ6I6h86FlZh1Xg1G6O8ZcnnHI8IP0oAZ13cP-OADgm4HKZjYO27dCopWJxswwZD6gOJ2_7WOW0ybWci8ZYN9V27q-6WMuxz2nDekyW2m0aogrgmOlG7d05z0GdLiYzdUsRpEHDl3BosSq7QtHjd3bAC4a1wqeZmLSAxJYEoy0C8nnXOEftfYU9fkFttnbZc5iLXLxcGwMRFWOzMZRSa4M2xd9Mv1B59HwMgtdBeZwS5CKa4HcUVsdb4r4qQZYXe3jvqMFgNdSQ6Q3VqSO1KI&skey=9f5b077cc22e75c7&v=v13) format("woff2-variations");font-family:Mulish;font-display:swap}
-            @font-face{font-style:italic;font-weight:300 800;src:url(https://fonts.gstatic.com/l/font?kit=1Pttg83HX_SGhgqk2gotYKNnBcIIwXowwoSqOJMXDB127eOLThF2sjI86b6hTE22pCc9LVejW8ioZ6uiSXxxnnJdySu9oC49pbsy6iK28c35cpqWeGDbQGs-Kjnrv0GQsS0jIBlvc12-h1pWcwuTr2XYug-7aNZLQshhbsoRoLe7Sm8zMTaZ_irAShohGamizyAXz6K1H_E8_-Z2WuirbxhgKS9Kxw2Bnmcwt2xjjsin0bosdxWOowRjDJaMokx_k0lQaRsOKLgJC_75b578q8ZkrGbOIA5E_kDbUErKlbrImNmS6Gmtg8x7pWjBD8SKoi7Xrzl5jxcBpRWk8KyyPXQMD3XlAtDdTX6Daqxhw9Jdsa4WIdQPO2Uu9ez6O29a73SX0RNgSy7lsOOE7FBucc0o8gUIblk5JAQ0NEYU0mWnw9ZMJXV9K5t4PEvLTIrJTfVOHl3ThaZWDBKyxMHD3u0HSFA1rAPYC5U-ryGqwtKWk1AX6ZScDVSCrdSoUWxs4-wgm83r_JVSX2DCBMLd0D_07Xu0TE16Ybw229rd6gJNxVvECI5RXw3Xbe1IhAnGEtwX71Vlf9H7x7tPS_5kAjGiranJ43kknK64EF55xHv9dBSxFmU7BvjXHLyESpt8rI137YFmraC4f7ABMA2SbBBvWyjt0oQyaO1v-1ceEbwixZeTF0w-IaITbNXpTcu_eBB-R8Kbgk87d6OAk-xmrJsxbOlUe-ru_OIZlQ&skey=12f3c822011b7b1c&v=v13) format("woff2-variations");font-family:MulishItalic;font-display:swap}
+            @font-face{
+                font-style:normal;
+                font-weight:300 800;
+                src:url(https://fonts.gstatic.com/l/font?kit=1Ptvg83HX_SGhgqU3QAqQqFdk_S_53g2xIaoNp0VDhtw7-GVUBN0tDQ-67CvTk-woiU_UymhWc6uZamsR35zmHRfyzWjoiw7o7kw5Cy088v_cJioRmLZRm08KDflvUOWty8hPgdtcVu4hVhYfQmRqWPaBdO7adZNQsVhb8oToLK7UG8_MTWYxyrFShMhBKmnzy0XyKKLH_Q89uZrWu2rYhhnLhdKxg2CnmYwqGxijs-n0LoDdxSPkwRgDJeMpUxhk0hQbBsPKJ4JCP74b5nykcZ4rGDnPGwm_iO5USqol9uqm7_w7A7PhqgZow2jCK7oqkW1plEbhX5jrnvG_MPQMBhuARiHDaK_XQ3he9wD0aM_oth0NaNtLhFM45mYLBU49w_1yGsCUVeHq53m8C8MbLFK7HhqcRtbBEdWFQZ28CTF4JAuATIfDt8aGg6pa8CrZb4sNxWxr-80J1zQ6I6h86FlZh1Xg1G6O8ZcnnHI8IP0oAZ13cP-OADgm4HKZjYO27dCopWJxswwZD6gOJ2_7WOW0ybWci8ZYN9V27q-6WMuxz2nDekyW2m0aogrgmOlG7d05z0GdLiYzdUsRpEHDl3BosSq7QtHjd3bAC4a1wqeZmLSAxJYEoy0C8nnXOEftfYU9fkFttnbZc5iLXLxcGwMRFWOzMZRSa4M2xd9Mv1B59HwMgtdBeZwS5CKa4HcUVsdb4r4qQZYXe3jvqMFgNdSQ6Q3VqSO1KI&skey=9f5b077cc22e75c7&v=v13) format("woff2-variations");
+                font-family:Mulish;
+                font-display:swap
+            }
+            @font-face{
+                font-style:italic;
+                font-weight:300 800;
+                src:url(https://fonts.gstatic.com/l/font?kit=1Pttg83HX_SGhgqk2gotYKNnBcIIwXowwoSqOJMXDB127eOLThF2sjI86b6hTE22pCc9LVejW8ioZ6uiSXxxnnJdySu9oC49pbsy6iK28c35cpqWeGDbQGs-Kjnrv0GQsS0jIBlvc12-h1pWcwuTr2XYug-7aNZLQshhbsoRoLe7Sm8zMTaZ_irAShohGamizyAXz6K1H_E8_-Z2WuirbxhgKS9Kxw2Bnmcwt2xjjsin0bosdxWOowRjDJaMokx_k0lQaRsOKLgJC_75b578q8ZkrGbOIA5E_kDbUErKlbrImNmS6Gmtg8x7pWjBD8SKoi7Xrzl5jxcBpRWk8KyyPXQMD3XlAtDdTX6Daqxhw9Jdsa4WIdQPO2Uu9ez6O29a73SX0RNgSy7lsOOE7FBucc0o8gUIblk5JAQ0NEYU0mWnw9ZMJXV9K5t4PEvLTIrJTfVOHl3ThaZWDBKyxMHD3u0HSFA1rAPYC5U-ryGqwtKWk1AX6ZScDVSCrdSoUWxs4-wgm83r_JVSX2DCBMLd0D_07Xu0TE16Ybw229rd6gJNxVvECI5RXw3Xbe1IhAnGEtwX71Vlf9H7x7tPS_5kAjGiranJ43kknK64EF55xHv9dBSxFmU7BvjXHLyESpt8rI137YFmraC4f7ABMA2SbBBvWyjt0oQyaO1v-1ceEbwixZeTF0w-IaITbNXpTcu_eBB-R8Kbgk87d6OAk-xmrJsxbOlUe-ru_OIZlQ&skey=12f3c822011b7b1c&v=v13) format("woff2-variations");
+                font-family:MulishItalic;
+                font-display:swap
+            }
             :root{
                 --font-family:Mulish,system-ui,-apple-system,sans-serif;
+                /*--font-family: Lato, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;此为 hexo-theme-ink 的字体选项*/
                 --font-family-italic:MulishItalic,system-ui,-apple-system,sans-serif;
                 --font-family-mono:Consolas,Monaco,"Andale Mono","Ubuntu Mono",ui-monospace,monospace;
                 --body-line-height:1.4;
@@ -30,7 +42,6 @@
                 --color-shark-3:hsl(212.5, 81.82%, 34.51%);
                 --color-shark-4:hsl(206.48, 81.01%, 35.1%);
                 --color-shark-5:hsl(200.56, 82.41%, 42.35%);
-                
                 --color-comet-hs:77,99%;
                 --color-comet-3:hsl(var(--color-comet-hs), 78%);
                 --color-comet-5:hsl(var(--color-comet-hs), 63%);
@@ -75,9 +86,7 @@
                 --header-height:5rem;
                 --scroll-top:calc(var(--header-height) + var(--space-s))
             }
-            .ck-config-layers-stratosphere{
-                --z-index-header:12000;--z-index-chat:12500;--z-index-overlay:13000;--z-index-lightbox:14000
-            }
+            .ck-config-layers-stratosphere{--z-index-header:12000;--z-index-chat:12500;--z-index-overlay:13000;--z-index-lightbox:14000}
             .ck-theme-aqua{--color-tang-hs:215,69%;--color-comet-hs:55,100%}
             .ck-theme-turquoise{--color-tang-hs:163,30%;--color-comet-hs:60,89%}
             
@@ -377,7 +386,7 @@
                 position:relative;
                 border-radius:var(--c-banner-radius);
                 /* background-image:url("./static/image/bg-home.png") */
-                background-image:url("https://s21.ax1x.com/2024/11/15/pA2S86x.jpg")
+                background-image:url("https://s21.ax1x.com/2024/11/19/pARqo26.jpg")
             }
             .c-banner--subtle{background-image:none;background-color:var(--color-seal-2)}
             .c-banner--subtle .c-banner__decorations{opacity:.05}
@@ -577,22 +586,53 @@
             .b-partners__slide:nth-child(14){animation-delay:calc(-.9285714286 * var(--slide-duration))}
             @keyframes slide-animation{6.0975609756%{transform:translate(-100%)}6.1075609756%{transform:translate(1540%)}}
             
+            /*本页单独*/
+            .b-leads{
+                --b-lead-gap:var(--space-3xs);
+                margin-bottom:var(--space-l);
+                background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0) var(--b-lead-height),rgba(0,0,0,0) var(--b-lead-height),rgba(0,0,0,0) calc(var(--b-lead-height) + var(--b-lead-gap)),var(--color-seal-2) calc(var(--b-lead-height) + var(--b-lead-gap)),var(--color-seal-2) calc(2 * var(--b-lead-height) + var(--b-lead-gap)),rgba(0,0,0,0) calc(2 * var(--b-lead-height) + var(--b-lead-gap)),rgba(0,0,0,0) calc(2 * var(--b-lead-height) + 2 * var(--b-lead-gap)));
+                background-size:100% calc(2*var(--b-lead-height) + 2*var(--b-lead-gap));
+                background-repeat:repeat-y
+            }
+            .b-leads .l-grid{
+                --l-grid-min-item-size:clamp(16rem, 90%, 21rem);
+                -moz-column-gap:var(--space-m);
+                column-gap:var(--space-m);row-gap:var(--b-lead-gap)
+            }
+            .b-leads .c-card{
+                --c-card-background-color:transparent;
+                gap:var(--space-3xs);
+                padding-inline:0;min-height:var(--b-lead-height)
+            }
+            .b-leads .c-card__footer,.b-leads .c-card__text{padding-inline:var(--space-xs)}
+            .b-leads .c-card__header img[src$=".png"]{filter:drop-shadow(var(--dropshadow-1))}
+            .b-leads .c-card__header a{
+                display:block;
+                transition-duration:var(--transition-time-2);
+                transition-property:background-color,transform;
+                border-radius:var(--space-xs);
+                background-color:rgba(237,239,248,var(--b-lead-bg-opacity,.8));
+                aspect-ratio:16/9;
+                overflow:hidden
+            }
+            .b-leads .c-card__header:hover a{--b-lead-bg-opacity:1;transform:scale(1.03)}
+            .b-faq__grid{
+                display:grid;grid-template-columns:1fr;
+                -moz-column-gap:var(--space-xl);column-gap:var(--space-xl)
+            }
         </style>
         <link rel="icon" type="image/png" href="https://s21.ax1x.com/2024/11/17/pAReUoR.jpg" sizes="32x32">
         <link rel="icon" type="image/png" href="https://s21.ax1x.com/2024/11/17/pAReUoR.jpg" sizes="96x96">
-        <meta name="description" content="Milaifon's HomePage, Independent media Gateway, 编程爱好者：Python Web3 CSS AI practice 小程序, 独立自媒体：怀旧 音乐 视频剪辑.">
+        <meta name="description" content="">
         <link rel="canonical" href="https://milaifon.com/">
-
-        <!-- 站点访问统计，by: https://v6.51.la/ -->
-        <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-        <script>LA.init({id:"3KMS4LamIJese78I",ck:"3KMS4LamIJese78I"})</script>
     </head>
 <body>
+    
     <header class="b-header">
         <div class="l-wrapper">
             <div class="b-header__main">
                 <a class="c-logo" href="https://milaifon.com" aria-label="Milaifon-logo">
-                    <img width="131" height="25" src="./static/image/logo-milaifon.svg" alt="logo-milaifon">
+                    <img width="131" height="25" src="../static/image/logo-milaifon.svg" alt="logo-milaifon">
                 </a>
                 <nav class="b-header__nav" aria-label="Main">
                     <button class="u-button-reset b-header__list-trigger js-header-list-trigger" aria-label="Menu"></button>
@@ -849,9 +889,11 @@
                                     </div>
                                     <div class="b-header__card-col u-flow-xs">
                                         <p class="u-fw-bold u-color-tang-5">Hexo主题</p>
-                                        <a href="/pages/hexo-theme.html">
+                                        <a href="./pages/hexo-theme.html">
                                             <picture class="b-header__card-col-media">
-                                                <img src="https://s21.ax1x.com/2024/11/18/pARJG6A.jpg" alt="hexo-theme" loading="lazy" decoding="async" / width="652" height="365">
+                                                <source type="image/avif" srcset="/assets/images/avif-small/illustration/header-ckbox-demo-c553f62e04.avif" media="(max-width: 48rem)"/>
+                                                <source type="image/avif" srcset="/assets/images/avif/illustration/header-ckbox-demo-eafde2497a.avif" media="(min-width: calc(48rem + 1px))"/>
+                                                <img src="/assets/images/illustration/header-ckbox-demo.png" alt="Mockup of CKBox" loading="lazy" decoding="async" / width="652" height="423">
                                             </picture>
                                         </a>
                                         <p class="u-fs--1 u-color-shark-2">The modern, secure way to upload and store your images and files. Edit images in CKBox, then add them into CKEditor.</p>
@@ -866,7 +908,7 @@
                             </a>
                         </li>
                         <li class="b-header__item"><!--我的曲库-->
-                            <a class="b-header__link" href="/music/index.html">
+                            <a class="b-header__link" href="/music/">
                                 <span class="b-header__title">我的曲库</span>
                             </a>
                         </li>
@@ -1024,7 +1066,7 @@
                                     <div class="b-header__card-col u-flow-xs">
                                         <ul class="c-menu u-flow" role="list">
                                             <li class="c-menu__item">
-                                                <a class="c-menu__link" href="/pages/blog/essay/index.html">
+                                                <a class="c-menu__link" href="/docs/">
                                                     <span class="c-menu__icon">
                                                         <svg class="c-sprite-icon" aria-hidden="true" role="img">
                                                             <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-c145179971.svg#lib-article"></use>
@@ -1090,101 +1132,357 @@
             </div>
         </div>
     </header>
-    <main class="t-home" tabindex="-1">
-        <section class="b-banner-hero" js-data-content="js-data-content">
-            <div class="c-banner">
-                <div class="c-banner__decorations c-banner__decorations--default" aria-hidden="true">
-                    <div class="c-banner__deco c-banner__deco--left-top">
-                        <svg class="c-sprite-icon c-sprite-icon--deco-left-top-curtain c-sprite-icon--em" aria-hidden="true" role="img">
-                            <use class="c-sprite-icon__use" href="https://ckeditor.com/assets/images/sprite/core/svg-symbols-c145179971.svg#deco-left-top-curtain"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="c-banner__main">
-                    <div class="l-wrapper">
-                        <div class="b-banner-hero__grid">
-                            <div class="u-flow-xs b-banner-hero__main">
-                                <h1 class="u-br-sm">Milaifon's <span class="u-color-comet-5">HomePage</span> <br>Independent media <br>Gateway</h1>
-                                <p class="u-br-sm">编程爱好者：Python Web3 CSS, AI practice, 小程序. <br>独立自媒体：怀旧、音乐、视频剪辑.</p>
-                                <div class="l-group l-pt-xs">
-                                    <a class="c-cta c-cta--high" href="/">作品集</a>
-                                    <a class="c-cta c-cta--outline" href="" target="blank" rel="nofollow" style="text-wrap: inline;">
-                                        <div class="padding-left" style="display: inline-flex;">
-                                            <img alt="github" src="https://github.githubassets.com/favicons/favicon.png" width="16" height="16"/>
-                                            <span class="p">GitHub</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="b-banner-hero__media">
-                                <picture>
-                                    <img src="https://s21.ax1x.com/2024/11/15/pA2SAlq.png" alt="" decoding="async" fetchpriority="high" / width="640" height="auto">
-                                </picture>
-                            </div>
+
+<main class="t-ckeditor-5-demo" tabindex="-1">
+    <section class="b-banner-hero" js-data-content="js-data-content">
+        <div class="c-banner">
+            <div class="c-banner__main">
+                <div class="l-wrapper">
+                    <div class="b-banner-hero__grid" style="--banner-hero-block-padding: 2rem">
+                        <div class="u-flow-xs b-banner-hero__main">
+                            <h1 class="u-br-sm">
+                                <span class="u-color-comet-5">Hexo</span> 主题
+                            </h1>
+                            <p class="u-br-sm">It’s easy to configure, customize, and control every aspect of the look, feel, and functionality of CKEditor. This page provides just a glimpse of the endless possibilities that CKEditor offers. Build anything imaginable with limitless customization.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-      
-        <section class="b-partners">
-            <div class="l-pv-m u-flow-m">
-                <div class="b-partners__track">
-                    <a class="b-partners__slide" alt="" href="">
-                        <img src="https://lf3-lv-buz.vlabstatic.com/obj/image-lvweb-buz/common/images/dreamina-v1.ico" width="64px" height="64px" aria-hidden="true" role="img"/>
-                        <p>扣子 AI</p>
-                    </a>
-                    <a class="b-partners__slide" alt="" href="https://scni4ms4en3h.feishu.cn/next/workplace/">
-                        <img src="./static/image/logo-feishu.png" width="64px" height="64px" aria-hidden="true" role="img"/>
-                        <p>飞书图表</p>
-                    </a>
-                    <a class="b-partners__slide" alt="" href="https://fllowus.cn">
-                        <img src="https://cdn2.flowus.cn/assets/_next/static/media/favicon.0c45c594.png" width="64px" height="64px" aria-hidden="true" role="img"/>
-                        <p>息流笔记</p>
-                    </a>
-                    <a class="b-partners__slide" alt="" href="https://imgse.com/">
-                        <img src="https://imgse.com/content/images/system/favicon_1587118523486_91617a.png" width="64px" height="64px" aria-hidden="true" role="img"/>
-                        <p>路过图床</p>
-                    </a>
-                    <a class="b-partners__slide" alt="" href="https://d1tools.com/tools/background-removal/">
-                        <img src="https://d1tools.com/favicon.svg" width="64px" height="64px" aria-hidden="true" role="img"/>
-                        <p>一键抠图</p>
-                    </a>
-                    <a class="b-partners__slide" alt="" href="https://minipic.app/">
-                        <img src="https://minipic.app/favicon.ico" width="64px" height="64px" aria-hidden="true" role="img"/>
-                        <p>图片压缩</p>
-                    </a>
-                    <a class="b-partners__slide" alt="" href="https://reg.summit.graphql.com/flow/apollo/summit24/graphqlsummitvirtual24/page/virtualcatalog?search=">
-                        <img src="https://static.rainfocus.com/apollo/summit24/static/apollo/staticfile/favicon_symbol_03_2x_1710874508785001Bj0w.png" width="64px" height="64px" aria-hidden="true" role="img"/>
-                        <p>GraphQL</p>
-                    </a>
-                    <a class="b-partners__slide" alt="" href="https://svg.la/zh/">
-                        <img src="https://svg.la/favicons/favicon-32x32.png" width="64px" height="64px" aria-hidden="true" role="img"/>
-                        <p>SVG工具</p>
-                    </a>
-                    <a class="b-partners__slide" alt="" href="https://color-dust.yunyoujun.cn/zh"><!--图片取色 开源-->
-                        <img src="https://color-dust.yunyoujun.cn/_nuxt/icons/icon_64x64.766263.png" width="64px" height="64px" aria-hidden="true" role="img"/>
-                        <p>图片取色</p>
-                    </a>
-                    <a class="b-partners__slide" alt="" href="https://colordesigner.io/convert/hextohsl"><!--色值转换-->
-                        <img src="https://colordesigner.io/favicons/favicon.ico" width="64px" height="64px" aria-hidden="true" role="img"/>
-                        <p>色值转换</p>
-                    </a>
-                    <a class="b-partners__slide" alt="" href="">
-                        <img src="https://lf3-lv-buz.vlabstatic.com/obj/image-lvweb-buz/common/images/dreamina-v1.ico" width="64px" height="64px" aria-hidden="true" role="img"/>
-                    </a>
-                    <a class="b-partners__slide" alt="" href="">
-                        <img src="https://lf3-lv-buz.vlabstatic.com/obj/image-lvweb-buz/common/images/dreamina-v1.ico" width="64px" height="64px" aria-hidden="true" role="img"/>
-                    </a>
-                    <a class="b-partners__slide" alt="" href="">
-                        <img src="https://lf3-lv-buz.vlabstatic.com/obj/image-lvweb-buz/common/images/dreamina-v1.ico" width="64px" height="64px" aria-hidden="true" role="img"/>
-                    </a>
-                    <a class="b-partners__slide" alt="" href="">
-                        <img src="https://lf3-lv-buz.vlabstatic.com/obj/image-lvweb-buz/common/images/dreamina-v1.ico" width="64px" height="64px" aria-hidden="true" role="img"/>
-                    </a>
+        </div>
+    </section>
+    <br>  
+    <section class="b-leads js-leads">
+        <div class="l-wrapper">
+            <div class="l-grid">
+                <article class="c-card js-leads-item"><!--AdminPlugin-->
+                    <div class="c-card__main">
+                        <header class="c-card__header">
+                            <a class="c-card__link" href="https://jaredforsyth.com/hexo-admin/">
+                                <picture>
+                                    <img src="https://s21.ax1x.com/2024/11/18/pARJG6A.jpg" alt="AdminPlugin" loading="lazy" decoding="async" aria-labelledby="ai-assistant" / width="904" height="512">
+                                </picture>
+                            </a>
+                        </header>
+                        <div class="c-card__text u-flow">
+                            <a class="c-card__link" href="https://jaredforsyth.com/hexo-admin/">
+                                <h2 class="u-fs-4 u-fw-e-bold u-br-md" id="ai-assistant">AdminPlugin</h2>
+                            </a>
+                            <p><a class="" href="https://github.com/jaredly/hexo-admin">仓库：jaredly/hexo-admin</a></p>
+                            <p><a class="" href="https://jaredforsyth.com/hexo-admin/admin/">Demo</a>后台管理插件</p>
+                            <br>
+                        </div>
+                        <footer class="c-card__footer">
+                            <p>推荐值：⭐⭐⭐⭐</p>
+                        </footer>
+                    </div>
+                </article>
+                <article class="c-card js-leads-item">
+                    <div class="c-card__main">
+                        <header class="c-card__header">
+                            <a class="c-card__link" href="https://blog.crazywong.com/">
+                                <picture><!--长宽比：20*11.22 | 10*5.66-->
+                                    <img src="https://s21.ax1x.com/2024/11/17/pARV738.jpg" alt="" loading="lazy" decoding="async" aria-labelledby="feature-rich-editor" / width="904" height="512">
+                                </picture>
+                            </a>
+                        </header>
+                        <div class="c-card__text u-flow">
+                            <a class="c-card__link" href="https://blog.crazywong.com/">
+                                <h2 class="u-fs-4 u-fw-e-bold u-br-md" id="feature-rich-editor">主題 Butterfly: CrazyWong</h2>
+                            </a>
+                            <p><a class="p" href="https://butterfly.zhheo.com/docs/">教程</a></p>
+                            <p><a class="" href="https://github.com/jerryc127/hexo-theme-butterfly">仓库</a> | <a class="" href="https://blog.lixiaomu.fun/posts/43857/">文档</a></p>
+                        </div><br>
+                        <footer class="c-card__footer">
+                            <p>推荐值：⭐⭐⭐⭐⭐</p>
+                        </footer>
+                    </div>
+                </article>
+                <article class="c-card js-leads-item"><!--云游君-->
+                    <div class="c-card__main">
+                        <header class="c-card__header">
+                            <a class="c-card__link" href="https://www.yunyoujun.cn/">
+                                <picture><!--长宽比：20*11.22 | 10*5.66-->
+                                    <img src="https://s21.ax1x.com/2024/11/17/pARZCgU.jpg" alt="" loading="lazy" decoding="async" aria-labelledby="feature-rich-editor" / width="904" height="512">
+                                </picture>
+                            </a>
+                        </header>
+                        <div class="c-card__text u-flow">
+                            <a class="c-card__link" href="https://www.yunyoujun.cn/">
+                                <h2 class="u-fs-4 u-fw-e-bold u-br-md" id="different-user-interfaces">云游君的小站</h2>
+                            </a>
+                            <p><a class="" href="https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-theme-yun">仓库：valaxy-theme-yun</a></p>
+                            <p><a class="" href="https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-theme-yun/docs/zh-CN">文档</a></p>
+                            <br>
+                        </div>
+                        <footer class="c-card__footer">
+                            <p>推荐值：⭐⭐⭐⭐</p>
+                        </footer>
+                    </div>
+                </article>
+                <article class="c-card js-leads-item"><!--Fluid-->
+                    <div class="c-card__main">
+                        <header class="c-card__header">
+                            <a class="c-card__link" href="https://hexo.fluid-dev.com/">
+                                <picture><!--长宽比：20*11.22 | 10*5.66-->
+                                    <img src="https://s21.ax1x.com/2024/11/17/pARZdxS.jpg" alt="Fluid" loading="lazy" decoding="async" aria-labelledby="feature-rich-editor" / width="904" height="512">
+                                </picture>
+                            </a>
+                        </header>
+                        <div class="c-card__text u-flow">
+                            <a class="c-card__link" href="https://hexo.fluid-dev.com/">
+                                <h2 class="u-fs-4 u-fw-e-bold u-br-md" id="different-user-interfaces">Fluid 主题</h2>
+                            </a>
+                            <p><a class="" href="https://github.com/fluid-dev/hexo-theme-fluid">仓库：hexo-theme-fluid</a></p>
+                            <p><a class="" href="https://hexo.fluid-dev.com/docs/">文档</a></p>
+                            <br>
+                        </div>
+                        <footer class="c-card__footer">
+                            <p>推荐值：⭐⭐⭐⭐</p>
+                        </footer>
+                    </div>
+                </article>
+                
+                <article class="c-card js-leads-item">
+                    <div class="c-card__main">
+                        <header class="c-card__header">
+                            <a class="c-card__link" href="/ai-assistant/#demo">
+                                <picture>
+                                    <source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-ai-assistant-469c4b293b.avif" media="(max-width: 48rem)"/>
+                                    <source type="image/avif" srcset="/assets/images/avif/illustration/demo-ai-assistant-05d14df928.avif" media="(min-width: calc(48rem + 1px))"/>
+                                    <img src="/assets/images/illustration/demo-ai-assistant.png" alt="" loading="lazy" decoding="async" aria-labelledby="ai-assistant" / width="904" height="512">
+                                </picture>
+                            </a>
+                        </header>
+                        <div class="c-card__text u-flow">
+                            <a class="c-card__link" href="/ai-assistant/#demo">
+                                <h2 class="u-fs-4 u-fw-e-bold u-br-md" id="ai-assistant">AI Assistant</h2>
+                            </a>
+                            <p>Add powerful AI content creation tools into CKEditor. Use pre-made prompts or custom queries to have AI write, rephrase, translate or summarize your text.</p>
+                        </div>
+                        <footer class="c-card__footer">
+                            <p>推荐值：⭐⭐⭐⭐</p>
+                        </footer>
+                    </div>
+                </article>
+                <article class="c-card js-leads-item">
+                    <div class="c-card__main">
+                        <header class="c-card__header">
+                            <a class="c-card__link" href="/collaboration/demo/#real-time-collaboration">
+                                <picture>
+                                    <source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-collaborative-real-time-19185786fa.avif" media="(max-width: 48rem)"/><source type="image/avif" srcset="/assets/images/avif/illustration/demo-collaborative-real-time-2cc097b2f9.avif" media="(min-width: calc(48rem + 1px))"/>
+                                    <img src="/assets/images/illustration/demo-collaborative-real-time.png" alt="" loading="lazy" decoding="async" aria-labelledby="collaborative-editor-real-time" / width="904" height="512">
+                                </picture>
+                            </a>
+                        </header>
+                        <div class="c-card__text u-flow">
+                            <a class="c-card__link" href="/collaboration/demo/#real-time-collaboration">
+                                <h2 class="u-fs-4 u-fw-e-bold u-br-md" id="collaborative-editor-real-time">Collaborative editor (real-time)</h2>
+                            </a>
+                            <p>Bring Google Doc-like experience into your app with CKEditor and eliminate the need for third-party apps.</p>
+                        </div>
+                        <footer class="c-card__footer">
+                            <a class="c-cta c-cta--outline" href="/collaboration/demo/#real-time-collaboration">Try demo</a>
+                        </footer>
+                    </div>
+                </article>
+                <article class="c-card js-leads-item">
+                    <div class="c-card__main">
+                        <header class="c-card__header">
+                        <a class="c-card__link" href="/collaboration/demo/#collaboration">
+                            <picture>
+                                <source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-collaborative-async-f1a024d706.avif" media="(max-width: 48rem)"/>
+                                <source type="image/avif" srcset="/assets/images/avif/illustration/demo-collaborative-async-c2b8b073a7.avif" media="(min-width: calc(48rem + 1px))"/>
+                                <img src="/assets/images/illustration/demo-collaborative-async.png" alt="" loading="lazy" decoding="async" aria-labelledby="collaborative-editor-asynchronous" / width="905" height="512">
+                            </picture>
+                        </a>
+                        </header>
+                        <div class="c-card__text u-flow">
+                            <a class="c-card__link" href="/collaboration/demo/#collaboration">
+                                <h2 class="u-fs-4 u-fw-e-bold u-br-md" id="collaborative-editor-asynchronous">Collaborative editor (asynchronous)</h2>
+                            </a>
+                            <p>Streamline the content editing workflow and bring everyone together into one space, with Comments, Track Changes and Revision History.</p>
+                        </div>
+                        <footer class="c-card__footer">
+                            <a class="c-cta c-cta--outline" href="/collaboration/demo/#collaboration">Try demo</a>
+                        </footer>
+                    </div>
+                </article>
+                <article class="c-card js-leads-item"><div class="c-card__main"><header class="c-card__header"><a class="c-card__link" href="/productivity-pack/#demo"><picture><source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-productivity-pack-601677aa0b.avif" media="(max-width: 48rem)"/><source type="image/avif" srcset="/assets/images/avif/illustration/demo-productivity-pack-68d46e6721.avif" media="(min-width: calc(48rem + 1px))"/><img src="/assets/images/illustration/demo-productivity-pack.png" alt="" loading="lazy" decoding="async" aria-labelledby="productivity-pack" / width="904" height="512"></picture></a></header><div class="c-card__text u-flow"><a class="c-card__link" href="/productivity-pack/#demo"><h2 class="u-fs-4 u-fw-e-bold u-br-md" id="productivity-pack">Productivity Pack</h2></a><p>Easier document navigation, consistent content creation and improved productivity with Document Outline, Table of Contents, Templates, Slash Commands and Format Painter.</p></div><footer class="c-card__footer"><a class="c-cta c-cta--outline" href="/productivity-pack/#demo">Try demo</a></footer></div></article><article class="c-card js-leads-item"><div class="c-card__main"><header class="c-card__header"><a class="c-card__link" href="/export-to-pdf-word/#demo"><picture><source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-pdf-word-ccaec71221.avif" media="(max-width: 48rem)"/><source type="image/avif" srcset="/assets/images/avif/illustration/demo-pdf-word-782f9763f4.avif" media="(min-width: calc(48rem + 1px))"/><img src="/assets/images/illustration/demo-pdf-word.png" alt="" loading="lazy" decoding="async" aria-labelledby="export-to-pdf-and-word" / width="905" height="512"></picture></a></header><div class="c-card__text u-flow"><a class="c-card__link" href="/export-to-pdf-word/#demo"><h2 class="u-fs-4 u-fw-e-bold u-br-md" id="export-to-pdf-and-word">Export to PDF & Word</h2></a><p>See how CKEditor automatically splits your content into pages. Convert your content to a PDF or Word file with a click of a button, keeping the original styles.</p></div><footer class="c-card__footer"><a class="c-cta c-cta--outline" href="/export-to-pdf-word/#demo">Try demo</a></footer></div></article><article class="c-card js-leads-item"><div class="c-card__main"><header class="c-card__header"><a class="c-card__link" href="/import-from-word/demo/"><picture><source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-import-feb669b687.avif" media="(max-width: 48rem)"/><source type="image/avif" srcset="/assets/images/avif/illustration/demo-import-968866f782.avif" media="(min-width: calc(48rem + 1px))"/><img src="/assets/images/illustration/demo-import.png" alt="" loading="lazy" decoding="async" aria-labelledby="import-from-word" / width="904" height="513"></picture></a></header><div class="c-card__text u-flow"><a class="c-card__link" href="/import-from-word/demo/"><h2 class="u-fs-4 u-fw-e-bold u-br-md" id="import-from-word">Import from Word</h2></a><p>High quality conversion of DOCX files (also with comments & track changes) to a clean and structured HTML format. Use REST API to batch convert multiple Word documents.</p></div><footer class="c-card__footer"><a class="c-cta c-cta--outline" href="/import-from-word/demo/">Try demo</a></footer></div></article>
+                <article class="c-card js-leads-item"><div class="c-card__main"><header class="c-card__header"><a class="c-card__link" href="/ckeditor-5/demo/merge-fields/#demo"><picture><source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-merge-fields-fa135956c8.avif" media="(max-width: 48rem)"/><source type="image/avif" srcset="/assets/images/avif/illustration/demo-merge-fields-f0265caf0d.avif" media="(min-width: calc(48rem + 1px))"/><img src="/assets/images/illustration/demo-merge-fields.png" alt="" loading="lazy" decoding="async" aria-labelledby="merge-fields" / width="904" height="512"></picture></a></header><div class="c-card__text u-flow"><a class="c-card__link" href="/ckeditor-5/demo/merge-fields/#demo"><h2 class="u-fs-4 u-fw-e-bold u-br-md" id="merge-fields">Merge Fields</h2></a><p>Insert dynamic placeholders into your content for automated, personalized document generation. Perfect for creating reusable templates for newsletters, legal documents, and more.</p></div><footer class="c-card__footer"><a class="c-cta c-cta--outline" href="/ckeditor-5/demo/merge-fields/#demo">Try demo</a></footer></div></article><article class="c-card js-leads-item"><div class="c-card__main"><header class="c-card__header"><a class="c-card__link" href="/productivity-pack/paste-from-office-enhanced-demo/"><picture><source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-paste-from-office-enhanced-f5bc7ad615.avif" media="(max-width: 48rem)"/><source type="image/avif" srcset="/assets/images/avif/illustration/demo-paste-from-office-enhanced-504bdd8b70.avif" media="(min-width: calc(48rem + 1px))"/><img src="/assets/images/illustration/demo-paste-from-office-enhanced.png" alt="" loading="lazy" decoding="async" aria-labelledby="paste-from-office-enhanced" / width="904" height="512"></picture></a></header><div class="c-card__text u-flow"><a class="c-card__link" href="/productivity-pack/paste-from-office-enhanced-demo/"><h2 class="u-fs-4 u-fw-e-bold u-br-md" id="paste-from-office-enhanced">Paste from Office Enhanced</h2></a><p>Paste from Office Enhanced retains a wider range of formatting options compared to default paste available in the editor. See how they compare in side-by-side demos.</p></div><footer class="c-card__footer"><a class="c-cta c-cta--outline" href="/productivity-pack/paste-from-office-enhanced-demo/">Try demo</a></footer></div></article><article class="c-card js-leads-item"><div class="c-card__main"><header class="c-card__header"><a class="c-card__link" href="/ckbox/demo/#ckeditor-with-ckbox"><picture><source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-ckbox-5682540232.avif" media="(max-width: 48rem)"/><source type="image/avif" srcset="/assets/images/avif/illustration/demo-ckbox-dcc0c2881d.avif" media="(min-width: calc(48rem + 1px))"/><img src="/assets/images/illustration/demo-ckbox.png" alt="" loading="lazy" decoding="async" aria-labelledby="file-upload-and-management-ckbox" / width="904" height="512"></picture></a></header><div class="c-card__text u-flow"><a class="c-card__link" href="/ckbox/demo/#ckeditor-with-ckbox"><h2 class="u-fs-4 u-fw-e-bold u-br-md" id="file-upload-and-management-ckbox">File upload and management (CKBox)</h2></a><p>The modern, secure way to upload, store, and serve your images and files. Edit images in CKBox, then add them into CKEditor.</p></div><footer class="c-card__footer"><a class="c-cta c-cta--outline" href="/ckbox/demo/#ckeditor-with-ckbox">Try demo</a></footer></div></article>
+                <article class="c-card js-leads-item"><div class="c-card__main"><header class="c-card__header"><a class="c-card__link" href="/ckeditor-5/demo/html-support/"><picture><source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-html-editor-1b0371a150.avif" media="(max-width: 48rem)"/><source type="image/avif" srcset="/assets/images/avif/illustration/demo-html-editor-19c2cdcae3.avif" media="(min-width: calc(48rem + 1px))"/><img src="/assets/images/illustration/demo-html-editor.png" alt="" loading="lazy" decoding="async" aria-labelledby="source-code-editing-and-html-support" / width="904" height="512"></picture></a></header><div class="c-card__text u-flow"><a class="c-card__link" href="/ckeditor-5/demo/html-support/"><h2 class="u-fs-4 u-fw-e-bold u-br-md" id="source-code-editing-and-html-support">Source code editing and HTML support</h2></a><p>CKEditor can be set to accept any HTML element, attribute, style, or class. Additionally, the Source button allows users to edit raw HTML.</p></div><footer class="c-card__footer"><a class="c-cta c-cta--outline" href="/ckeditor-5/demo/html-support/">Try demo</a></footer></div></article><article class="c-card js-leads-item"><div class="c-card__main"><header class="c-card__header"><a class="c-card__link" href="/ckeditor-5/demo/markdown/"><picture><source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-markdown-editor-b65a0a848f.avif" media="(max-width: 48rem)"/><source type="image/avif" srcset="/assets/images/avif/illustration/demo-markdown-editor-4b71235ec7.avif" media="(min-width: calc(48rem + 1px))"/><img src="/assets/images/illustration/demo-markdown-editor.png" alt="" loading="lazy" decoding="async" aria-labelledby="markdown-editor" / width="904" height="512"></picture></a></header><div class="c-card__text u-flow"><a class="c-card__link" href="/ckeditor-5/demo/markdown/"><h2 class="u-fs-4 u-fw-e-bold u-br-md" id="markdown-editor">Markdown editor</h2></a><p>The Markdown plugin enables the editor to support both Markdown input and output.</p></div><footer class="c-card__footer"><a class="c-cta c-cta--outline" href="/ckeditor-5/demo/markdown/">Try demo</a></footer></div></article><article class="c-card js-leads-item"><div class="c-card__main"><header class="c-card__header"><a class="c-card__link" href="/ckeditor-5/demo/headless/"><picture><source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-headless-editor-734ee000d5.avif" media="(max-width: 48rem)"/><source type="image/avif" srcset="/assets/images/avif/illustration/demo-headless-editor-fc3795b63b.avif" media="(min-width: calc(48rem + 1px))"/><img src="/assets/images/illustration/demo-headless-editor.png" alt="" loading="lazy" decoding="async" aria-labelledby="headless-editor" / width="904" height="512"></picture></a></header><div class="c-card__text u-flow"><a class="c-card__link" href="/ckeditor-5/demo/headless/"><h2 class="u-fs-4 u-fw-e-bold u-br-md" id="headless-editor">Headless editor</h2></a><p>CKEditor can fit nicely with the rest of your application. Headless editor allows you to build your own UI on top of our editing engine, using your favorite technology.</p></div><footer class="c-card__footer"><a class="c-cta c-cta--outline" href="/ckeditor-5/demo/headless/">Try demo</a></footer></div></article><article class="c-card js-leads-item"><div class="c-card__main"><header class="c-card__header"><a class="c-card__link" href="/ckeditor-5/demo/mobile-support/"><picture><source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-mobile-fd921f3a79.avif" media="(max-width: 48rem)"/><source type="image/avif" srcset="/assets/images/avif/illustration/demo-mobile-a027daaea8.avif" media="(min-width: calc(48rem + 1px))"/><img src="/assets/images/illustration/demo-mobile.png" alt="" loading="lazy" decoding="async" aria-labelledby="mobile-friendly-editor" / width="904" height="512"></picture></a></header><div class="c-card__text u-flow"><a class="c-card__link" href="/ckeditor-5/demo/mobile-support/"><h2 class="u-fs-4 u-fw-e-bold u-br-md" id="mobile-friendly-editor">Mobile friendly editor</h2></a><p>CKEditor works great on mobile devices without any special configuration. See it in action on a specially crafted demo page that simulates a small screen.</p></div><footer class="c-card__footer"><a class="c-cta c-cta--outline" href="/ckeditor-5/demo/mobile-support/">Try demo</a></footer></div></article>
+                <article class="c-card js-leads-item"><div class="c-card__main"><header class="c-card__header"><a class="c-card__link" href="/mathtype/#demo-mathtype"><picture><source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-math-36933725c6.avif" media="(max-width: 48rem)"/><source type="image/avif" srcset="/assets/images/avif/illustration/demo-math-a57b92a57d.avif" media="(min-width: calc(48rem + 1px))"/><img src="/assets/images/illustration/demo-math.png" alt="" loading="lazy" decoding="async" aria-labelledby="equations-and-formulas-mathtype" / width="905" height="513"></picture></a></header><div class="c-card__text u-flow"><a class="c-card__link" href="/mathtype/#demo-mathtype"><h2 class="u-fs-4 u-fw-e-bold u-br-md" id="equations-and-formulas-mathtype">Equations and formulas (MathType)</h2></a><p>Add math equations and chemical formulas to your digital content. Type or handwrite and let it change automatically. Copy or convert to LaTeX.</p></div><footer class="c-card__footer"><a class="c-cta c-cta--outline" href="/mathtype/#demo-mathtype">Try demo</a></footer></div></article><article class="c-card js-leads-item"><div class="c-card__main"><header class="c-card__header"><a class="c-card__link" href="/spellchecker/#demo-proofreader"><picture><source type="image/avif" srcset="/assets/images/avif-small/illustration/demo-spellcheck-4285da2053.avif" media="(max-width: 48rem)"/><source type="image/avif" srcset="/assets/images/avif/illustration/demo-spellcheck-8199ac44f7.avif" media="(min-width: calc(48rem + 1px))"/><img src="/assets/images/illustration/demo-spellcheck.png" alt="" loading="lazy" decoding="async" aria-labelledby="spellchecker-wproofreader" / width="904" height="512"></picture></a></header><div class="c-card__text u-flow"><a class="c-card__link" href="/spellchecker/#demo-proofreader"><h2 class="u-fs-4 u-fw-e-bold u-br-md" id="spellchecker-wproofreader">Spellchecker (WProofreader)</h2></a><p>Use a multilingual spell and grammar checker to eliminate unnecessary typos and mistakes. Customize this tool to respect any relevant proper names.</p></div><footer class="c-card__footer"><a class="c-cta c-cta--outline" href="/spellchecker/#demo-proofreader">Try demo</a></footer></div></article>
+            </div>
+        </div>
+    </section>
+    
+    <section class="b-in-numbers u-ta-center">
+        <div class="l-wrapper l-pv-l">
+            <h2 class="l-pb-m">CKEditor in numbers</h2>
+            <ul class="l-grid" role="list">
+                <li><h3 class="u-sr-only">Over 50 millions downloads</h3><h3 class="u-fs-2 l-pb-3xs u-fw-e-bold" aria-hidden="true"><span class="js-digit" id="js-digit-0" data-number="50" data-duration="1000">50</span><span>M+</span></h3><p aria-hidden="true">downloads</p></li>
+                <li><h3 class="u-sr-only">Over 100 thousands customers</h3><h3 class="u-fs-2 l-pb-3xs u-fw-e-bold" aria-hidden="true"><span class="js-digit" id="js-digit-1" data-number="100" data-duration="1000">100</span><span>K+</span></h3><p aria-hidden="true">customers</p></li>
+                <li><h3 class="u-sr-only">Over 1000 APIs</h3><h3 class="u-fs-2 l-pb-3xs u-fw-e-bold" aria-hidden="true"><span class="js-digit" id="js-digit-2" data-number="1000" data-duration="0">1000</span><span>+</span></h3><p aria-hidden="true">APIs</p></li>
+                <li><h3 class="u-sr-only">Over 300 features</h3><h3 class="u-fs-2 l-pb-3xs u-fw-e-bold" aria-hidden="true"><span class="js-digit" id="js-digit-3" data-number="300" data-duration="500">300</span><span>+</span></h3><p aria-hidden="true">Features</p></li>
+                <li><h3 class="u-sr-only">100% code coverage</h3><h3 class="u-fs-2 l-pb-3xs u-fw-e-bold" aria-hidden="true"><span class="js-digit" id="js-digit-4" data-number="100" data-duration="500">100</span><span>%</span></h3><p aria-hidden="true">code coverage</p></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="b-banner-call-me">
+        <div class="l-wrapper">
+            <div class="c-banner">
+                <div class="c-banner__main">
+                    <div class="u-center l-pv-xl l-ph-s u-flow-m">
+                        <div class="u-center">
+                            <h2 class="u-br-md">Can’t see what you’re looking for?</h2>
+                            <p class="l-pt-xs u-br-md u-fs-4">Talk to our Sales Representative to discuss your use case <br/>and learn what more CKEditor can do for you.</p>
+                        </div>
+                        <div class="l-group"><a class="c-cta c-cta--high" href="/contact-sales/">Contact Sales</a></div>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
+
+<footer class="b-footer">
+    <div class="b-footer__header u-bg-seal-1">
+        <div class="l-wrapper">
+            <div class="b-footer__main l-pv-xl">
+                <div class="b-footer__logo">
+                    <a class="c-logo" href="/" aria-label="CKEditor 5">
+                        <svg width="131" height="25" viewBox="0 0 131 25" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
+                    </a>
+                </div>
+                <div class="b-footer__menu js-accordion">
+                    <div class="b-footer__column js-accordion__item">
+                        <p class="u-fw-bold b-footer__title">Products</p>
+                        <button class="b-footer__button u-button-reset u-fw-bold js-accordion__trigger" type="button">Products
+                            <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                                <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-a120ca9eac.svg#ui-arrow-down-outline"></use>
+                            </svg>
+                        </button>
+                        <ul class="b-footer__list js-accordion__content" role="list">
+                            <li class="b-footer__item l-pv-3xs"><a href="/ckeditor-5/">CKEditor 5</a></li>
+                            <li class="b-footer__item l-pv-3xs"><a href="/ckeditor-4/">CKEditor 4</a></li>
+                            <li class="b-footer__item l-pv-3xs"><a href="/ckbox/">CKBox</a></li>
+                        </ul>
+                    </div>
+    <div class="b-footer__column js-accordion__item">
+        <p class="u-fw-bold b-footer__title">Premium features</p>
+        <button class="b-footer__button u-button-reset u-fw-bold js-accordion__trigger" type="button">Premium features
+            <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                <use class="c-sprite-icon__use" href="g#ui-arrow-down-outline"></use>
+            </svg>
+        </button>
+        <ul class="b-footer__list js-accordion__content" role="list">
+            <li class="b-footer__item l-pv-3xs"><a href="/collaboration/">Collaboration</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/productivity-pack/">Productivity Pack</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/ai-assistant/">AI Assistant</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/import-from-word/">Import from Word</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/export-to-pdf-word/">Export to PDF and Word</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/file-management/">File management</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/ckeditor-5/revision-history/">Revision History</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/spellchecker/">Spell and grammar check</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/mathtype/">Math equations</a></li>
+        </ul>
+    </div>
+    <div class="b-footer__column js-accordion__item">
+        <p class="u-fw-bold b-footer__title">Support</p>
+        <button class="b-footer__button u-button-reset u-fw-bold js-accordion__trigger" type="button">Support
+            <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-a120ca9eac.svg#ui-arrow-down-outline"></use>
+            </svg>
+        </button>
+        <ul class="b-footer__list js-accordion__content" role="list">
+            <li class="b-footer__item l-pv-3xs"><a href="https://ckeditor.com/docs/">Documentation</a></li>
+            <li class="b-footer__item l-pv-3xs"><a target="_blank" rel="noopener" href="https://support.ckeditor.com/hc/en-us/">Help center</a></li>
+            <li class="b-footer__item l-pv-3xs"><a target="_blank" rel="noopener" href="https://github.com/ckeditor/">CKEditor GitHub</a></li>
+            <li class="b-footer__item l-pv-3xs"><a target="_blank" rel="noopener" href="https://dashboard.ckeditor.com/login">Customer login</a></li>
+            <li class="b-footer__item l-pv-3xs"><a target="_blank" rel="noopener" href="https://status.cke-cs.com/">Status page</a></li>
+        </ul>
+    </div>
+    <div class="b-footer__column js-accordion__item">
+        <p class="u-fw-bold b-footer__title">Explore</p>
+        <button class="b-footer__button u-button-reset u-fw-bold js-accordion__trigger" type="button">Explore
+            <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-a120ca9eac.svg#ui-arrow-down-outline"></use>
+            </svg>
+        </button>
+        <ul class="b-footer__list js-accordion__content" role="list">
+            <li class="b-footer__item l-pv-3xs"><a href="/pricing/">Pricing</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/contact/">Contact us</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/case-studies/">Case studies</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/solutions/">Solutions</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/partners/">Partners</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="https://cksource.com/about-us/">About us</a></li>
+        </ul>
+    </div>
+    <div class="b-footer__column js-accordion__item">
+        <p class="u-fw-bold b-footer__title">Resources</p>
+        <button class="b-footer__button u-button-reset u-fw-bold js-accordion__trigger" type="button">Resources
+            <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-a120ca9eac.svg#ui-arrow-down-outline"></use>
+            </svg>
+        </button>
+        <ul class="b-footer__list js-accordion__content" role="list">
+            <li class="b-footer__item l-pv-3xs"><a href="/ckeditor-5/resources/">CKEditor 5</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/ckfinder/resources/">CKFinder</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/ckeditor-5/react/">React rich text editor</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/ckeditor-5/angular/">Angular rich text editor</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/ckeditor-5/vue/">Vue rich text editor</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/insights/">Insights</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/blog/">Blog</a></li>
+        </ul>
+    </div>
+    <div class="b-footer__column js-accordion__item">
+        <p class="u-fw-bold b-footer__title">Legal</p>
+        <button class="b-footer__button u-button-reset u-fw-bold js-accordion__trigger" type="button">Legal
+            <svg class="c-sprite-icon" aria-hidden="true" role="img">
+                <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-a120ca9eac.svg#ui-arrow-down-outline"></use>
+            </svg>
+        </button>
+        <ul class="b-footer__list js-accordion__content" role="list">
+            <li class="b-footer__item l-pv-3xs"><a href="/legal/">Terms of use</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/legal/privacy-policy/">Privacy policy</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/legal/cookies-policy/">Cookies policy</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/legal/fair-acceptable-use-policy/">Acceptable use policy</a></li>
+            <li class="b-footer__item l-pv-3xs"><a href="/legal/ckeditor-oss-license/">Open Source license</a></li>
+        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+<div class="l-pt-m l-pb-xs b-footer__footer">
+    <div class="l-wrapper u-flow-l">
+        <div class="l-group-space-between l-pr-xl">
+            <p>Copyright 2003 - 2024 CKSource Holding LTD. All rights reserved.</p>
+            <div class="c-share c-share--light">
+                <a aria-label="Visit facebook CKEditor 5 account" href="https://www.facebook.com/ckeditor/" target="_blank" rel="noreferrer">
+                    <svg class="c-sprite-icon c-sprite-icon--social-facebook" aria-hidden="true" role="img">
+                        <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-a120ca9eac.svg#social-facebook"></use>
+                    </svg>
+                </a>
+                <a aria-label="Visit twitter CKEditor 5 account" href="https://twitter.com/ckeditor/" target="_blank" rel="noreferrer">
+                    <svg class="c-sprite-icon c-sprite-icon--social-twitter" aria-hidden="true" role="img">
+                        <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-a120ca9eac.svg#social-twitter"></use>
+                    </svg>
+                </a>
+                <a aria-label="Visit linkedin CKEditor 5 account" href="https://www.linkedin.com/company/cksource/" target="_blank" rel="noreferrer">
+                    <svg class="c-sprite-icon c-sprite-icon--social-linkedin" aria-hidden="true" role="img">
+                        <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-a120ca9eac.svg#social-linkedin"></use>
+                    </svg>
+                </a>
+                <a aria-label="Visit github CKEditor 5 account" href="https://github.com/ckeditor/ckeditor5/" target="_blank" rel="noreferrer">
+                    <svg class="c-sprite-icon c-sprite-icon--social-github" aria-hidden="true" role="img">
+                        <use class="c-sprite-icon__use" href="/assets/images/sprite/core/svg-symbols-a120ca9eac.svg#social-github"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
 </body>
 </html>
